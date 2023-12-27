@@ -14,7 +14,7 @@ with.
 
 The lessons presented here contain a combination of general information on topics and walkthroughs of creating hacks, with pictures and explanations. The lessons build off of previous entries but will still make sense in whatever order you want to explore.
       
-A PDF of all the content on the site is available [here.](/assets/GameHackingAcademy.pdf) This PDF is not updated with each change to the site and may differ slightly from the site.
+A PDF of all the content on the site is available <a href="assets/GameHackingAcademy.pdf" target="_blank">here.</a> This PDF is not updated with each change to the site and may differ slightly from the site.
 
 # Donation
 
