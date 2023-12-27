@@ -1,0 +1,1959 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Aimbot · Game Hacking Academy</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Game hacking tutorials and lessons.
+"><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="attilathedud"><link rel="stylesheet" href="/assets/gitbook/style.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+
+<link rel="stylesheet" href="/assets/gitbook/rouge/base16.css">
+
+<link rel="stylesheet" href="/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+
+<script src="/assets/particles.min.js"></script>
+
+<style>
+    @media screen and (min-width: 1101px) {
+      .eyecandy {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        min-height: 50%;
+        height: 50%;
+        width: 25%;
+        pointer-events: none;
+        z-index: 1;
+      }
+    }
+    @media screen and (max-width: 1100px) {
+      .eyecandy {
+        display: none;
+      }
+    }
+  </style>
+
+
+
+
+
+
+    <link rel="prev" href="/pages/5/05/" />
+     
+    <link rel="next" href="/pages/5/07/" />
+    
+    
+  </head>
+  <body>
+    <div id="particles-js" class="eyecandy"></div>
+
+    <div class="book color-theme-2"><div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;  // propagate
+        }
+        // Fixes the anchor links scroll problem on mobile browsers
+        function mobilePageScrollToAnchor(element) {
+            $(element).closest('li.chapter').find('ul>li').removeClass('active');
+            $(element).parent().addClass('active');
+            if ($(document).width() <= 1240) {
+                $('div.body-inner').animate({scrollTop: $($(element).attr('href')).get(0).offsetTop});
+            }
+            return true;
+        }
+    </script>
+
+    <nav role="navigation">
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/assets/search.html">Click to Search</a>
+        </div>
+        <ul class="summary">
+            
+                <!-- <p>pages</p> -->
+                
+                    
+
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/">
+                        
+                            <a href="/" onclick="pageScrollToTop(this)">
+                                About
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                            <li class="divider-header">
+                                <a>Basics</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/1/01/">
+                        
+                            <a href="/pages/1/01/" onclick="pageScrollToTop(this)">
+                                Computer Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/1/02/">
+                        
+                            <a href="/pages/1/02/" onclick="pageScrollToTop(this)">
+                                Game Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/1/03/">
+                        
+                            <a href="/pages/1/03/" onclick="pageScrollToTop(this)">
+                                Hacking Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/1/04/">
+                        
+                            <a href="/pages/1/04/" onclick="pageScrollToTop(this)">
+                                Setting Up a VM
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/1/05/">
+                        
+                            <a href="/pages/1/05/" onclick="pageScrollToTop(this)">
+                                Memory Hack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>Debugging & Reversing</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/01/">
+                        
+                            <a href="/pages/2/01/" onclick="pageScrollToTop(this)">
+                                Debugging Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/02/">
+                        
+                            <a href="/pages/2/02/" onclick="pageScrollToTop(this)">
+                                Assembly Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/03/">
+                        
+                            <a href="/pages/2/03/" onclick="pageScrollToTop(this)">
+                                Using Breakpoints
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/04/">
+                        
+                            <a href="/pages/2/04/" onclick="pageScrollToTop(this)">
+                                Changing Game Code
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/05/">
+                        
+                            <a href="/pages/2/05/" onclick="pageScrollToTop(this)">
+                                Reversing Code
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/06/">
+                        
+                            <a href="/pages/2/06/" onclick="pageScrollToTop(this)">
+                                Code Caves
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/07/">
+                        
+                            <a href="/pages/2/07/" onclick="pageScrollToTop(this)">
+                                Using Code Caves
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/08/">
+                        
+                            <a href="/pages/2/08/" onclick="pageScrollToTop(this)">
+                                Dynamic Memory Allocation
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/09/">
+                        
+                            <a href="/pages/2/09/" onclick="pageScrollToTop(this)">
+                                Defeating DMA
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>Programming</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/3/01/">
+                        
+                            <a href="/pages/3/01/" onclick="pageScrollToTop(this)">
+                                Programming Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/3/02/">
+                        
+                            <a href="/pages/3/02/" onclick="pageScrollToTop(this)">
+                                External Memory Hack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/3/03/">
+                        
+                            <a href="/pages/3/03/" onclick="pageScrollToTop(this)">
+                                DLL Memory Hack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/3/04/">
+                        
+                            <a href="/pages/3/04/" onclick="pageScrollToTop(this)">
+                                Code Caves &amp; DLL&#39;s
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/3/05/">
+                        
+                            <a href="/pages/3/05/" onclick="pageScrollToTop(this)">
+                                Printing Text
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>RTS/RPG Hacks</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/4/01/">
+                        
+                            <a href="/pages/4/01/" onclick="pageScrollToTop(this)">
+                                Stathack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/4/02/">
+                        
+                            <a href="/pages/4/02/" onclick="pageScrollToTop(this)">
+                                Map Hack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/4/03/">
+                        
+                            <a href="/pages/4/03/" onclick="pageScrollToTop(this)">
+                                Macro Bot
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/4/04/">
+                        
+                            <a href="/pages/4/04/" onclick="pageScrollToTop(this)">
+                                Farming Bot
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>FPS Hacks</a>
+                            </li>
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/01/">
+                        
+                            <a href="/pages/5/01/" onclick="pageScrollToTop(this)">
+                                3D Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/02/">
+                        
+                            <a href="/pages/5/02/" onclick="pageScrollToTop(this)">
+                                Wallhack (Memory)
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/03/">
+                        
+                            <a href="/pages/5/03/" onclick="pageScrollToTop(this)">
+                                Wallhack (OpenGL)
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/04/">
+                        
+                            <a href="/pages/5/04/" onclick="pageScrollToTop(this)">
+                                Chams (OpenGL)
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/05/">
+                        
+                            <a href="/pages/5/05/" onclick="pageScrollToTop(this)">
+                                Triggerbot
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter active" data-level="1.2" data-path="/pages/5/06/">
+                        
+                            <a href="/pages/5/06/" onclick="pageScrollToTop(this)">
+                                Aimbot
+                            </a>
+                            
+                                
+                                    <ul><li><a href="#target" onclick="mobilePageScrollToAnchor(this)" >Target</a></li><li><a href="#identify" onclick="mobilePageScrollToAnchor(this)" >Identify</a></li><li><a href="#understand" onclick="mobilePageScrollToAnchor(this)" >Understand</a></li><li><a href="#locating-enemies" onclick="mobilePageScrollToAnchor(this)" >Locating Enemies</a></li><li><a href="#locating-our-player" onclick="mobilePageScrollToAnchor(this)" >Locating Our Player</a></li><li><a href="#reversing-player-structure" onclick="mobilePageScrollToAnchor(this)" >Reversing Player Structure</a></li><li><a href="#changing-our-view-angle" onclick="mobilePageScrollToAnchor(this)" >Changing our View Angle</a></li><li><a href="#aiming-left-and-right" onclick="mobilePageScrollToAnchor(this)" >Aiming Left and Right</a></li><li><a href="#aiming-up-and-down" onclick="mobilePageScrollToAnchor(this)" >Aiming Up and Down</a></li><li><a href="#multiple-enemies" onclick="mobilePageScrollToAnchor(this)" >Multiple Enemies</a></li></ul>
+
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/07/">
+                        
+                            <a href="/pages/5/07/" onclick="pageScrollToTop(this)">
+                                No Recoil
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/08/">
+                        
+                            <a href="/pages/5/08/" onclick="pageScrollToTop(this)">
+                                Radar Hack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/09/">
+                        
+                            <a href="/pages/5/09/" onclick="pageScrollToTop(this)">
+                                ESP
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/10/">
+                        
+                            <a href="/pages/5/10/" onclick="pageScrollToTop(this)">
+                                Multihack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>Multiplayer</a>
+                            </li>
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/6/01/">
+                        
+                            <a href="/pages/6/01/" onclick="pageScrollToTop(this)">
+                                Multiplayer Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/6/02/">
+                        
+                            <a href="/pages/6/02/" onclick="pageScrollToTop(this)">
+                                Packet Analysis
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/6/03/">
+                        
+                            <a href="/pages/6/03/" onclick="pageScrollToTop(this)">
+                                Reversing Packets
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/6/04/">
+                        
+                            <a href="/pages/6/04/" onclick="pageScrollToTop(this)">
+                                Creating an External Client
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/6/05/">
+                        
+                            <a href="/pages/6/05/" onclick="pageScrollToTop(this)">
+                                Proxying TCP Traffic
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>Tool Development</a>
+                            </li>
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/7/01/">
+                        
+                            <a href="/pages/7/01/" onclick="pageScrollToTop(this)">
+                                DLL Injector
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/7/02/">
+                        
+                            <a href="/pages/7/02/" onclick="pageScrollToTop(this)">
+                                Pattern Scanner
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/7/03/">
+                        
+                            <a href="/pages/7/03/" onclick="pageScrollToTop(this)">
+                                Memory Scanner
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/7/04/">
+                        
+                            <a href="/pages/7/04/" onclick="pageScrollToTop(this)">
+                                Disassembler
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/7/05/">
+                        
+                            <a href="/pages/7/05/" onclick="pageScrollToTop(this)">
+                                Debugger
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/7/06/">
+                        
+                            <a href="/pages/7/06/" onclick="pageScrollToTop(this)">
+                                Call Logger
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>Game Resources</a>
+                            </li>
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/8/01/">
+                        
+                            <a href="/pages/8/01/" onclick="pageScrollToTop(this)">
+                                Resource Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/8/02/">
+                        
+                            <a href="/pages/8/02/" onclick="pageScrollToTop(this)">
+                                Modifying Save Data
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/8/03/">
+                        
+                            <a href="/pages/8/03/" onclick="pageScrollToTop(this)">
+                                Modifying Textures
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/8/04/">
+                        
+                            <a href="/pages/8/04/" onclick="pageScrollToTop(this)">
+                                Modifying Units
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                
+            
+                <!-- <p>posts</p> -->
+                
+                    
+
+                    
+                
+            
+        </ul>
+
+        &nbsp;
+    </nav>
+</div>
+<div class="book-body">
+        <div class="book-header" role="navigation">
+          <!-- Title -->
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i>
+            
+            <a href=".">Aimbot</a>
+            
+          </h1>
+        </div>
+
+        <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+
+                    <h1 id="target">Target</h1>
+
+<p>Our target for this lesson will be Assault Cube 1.2.0.2.</p>
+
+<h1 id="identify">Identify</h1>
+
+<p>Our goal in this lesson is to create an aimbot, a type of hack that
+automatically aims at other players.</p>
+
+<h1 id="understand">Understand</h1>
+
+<p>The core fundamentals of an aimbot rely on trigonometry. Take the
+following scene from our target game, Assault Cube:</p>
+
+<p><img src="/assets/images/5/6/cube1.png" alt="Assault Cube Gameplay" /></p>
+
+<p>Focusing on just our in-game player and the enemy, this scene can be
+mapped onto a 3D graph that looks like:</p>
+
+<p><img src="/assets/images/5/6/cube2.png" alt="3D Representation" /></p>
+
+<p>To simplify, we can convert this into a 2D graph by fixing our perspective
+and eliminating one of the axes. By choosing a top-down perspective, we
+can eliminate the Z axis. The resulting graph would look like:</p>
+
+<p><img src="/assets/images/5/6/cube3.png" alt="2D Representation" /></p>
+
+<p>Every first-person or third-person shooter allows the player to look left
+and right to aim. For example, in our first screenshot, our player is
+looking straight ahead. On our 2D graph, this would look like:</p>
+
+<p><img src="/assets/images/5/6/cube4.png" alt="3D Representation" /></p>
+
+<p>If we are looking at an enemy, like so:</p>
+
+<p><img src="/assets/images/5/6/cube5.png" alt="3D Representation" /></p>
+
+<p>Then our graph would change to look like:</p>
+
+<p><img src="/assets/images/5/6/cube6.png" alt="3D Representation" /></p>
+
+<p>Games represent this left and right value as an angle. They can represent
+this angle in multiple ways, such as a vector, a radian, or a degree.
+However, for our current example, we will assume the view angle is
+represented in degrees. To create an aimbot, we need to find a way to
+calculate this angle for an enemy. We can do this by first creating a
+right triangle using our player’s position and the enemy’s position:</p>
+
+<p><img src="/assets/images/5/6/cube7.png" alt="3D Representation" /></p>
+
+<p>If we knew the value of θ, we could use the tangent operation to determine
+the ratio between the opposite (7 above) and adjacent (5 above) sides. In
+our case, we have the opposite and adjacent sides and want to determine θ.
+To do this, we can calculate the inverse tangent or arctangent. The
+arctangent will then represent the angle we need to set our player’s aim
+to aim at an enemy.</p>
+
+<p>However, this will only correctly aim to the left and right. To aim up and
+down, we will need to do a similar operation for the Y and Z axes.</p>
+
+<p>Before we can do any of this, though, we will need to locate where the
+game stores enemies. Then, we will need to locate where the game stores
+our player. Finally, we will need to reverse the player structure to
+locate the X, Y, and Z members in the structure, as well as the view angle
+members.</p>
+
+<h1 id="locating-enemies">Locating Enemies</h1>
+
+<p>To locate enemies in the game, first create a game with 8 bots and set
+them to idle. Typically, games will store enemies in a list and hold a
+static location to this list. In the previous lesson, we found the game code
+responsible for displaying a player’s name when you hovered over that
+player. To do this, the game must have code inside that function that
+iterates over the enemies in the game and retrieves their names. This was
+the code we located in the last lesson:</p>
+
+<p><img src="/assets/images/5/6/cube8.png" alt="Code For Finding Current Player Looked at" /></p>
+
+<p>When reversing this code, we determined that the <strong>call</strong> to
+<code class="language-plaintext highlighter-rouge">0x4607c0</code> at <code class="language-plaintext highlighter-rouge">0x40ad9d</code> was responsible for loading
+the current player looked at into <strong>eax</strong>. If we step into
+this <strong>call</strong>, we can see that a <strong>call</strong> at the
+end is responsible for getting this value:</p>
+
+<p><img src="/assets/images/5/6/cube9.png" alt="Code For Finding Current Player Looked at" /></p>
+
+<p>Stepping into this <strong>call</strong>, we can see that it is rather
+long with many loops and conditionals. As we step through the code, you
+will notice the following line:</p>
+
+<p><img src="/assets/images/5/6/cube10.png" alt="Code For Finding Current Player Looked at" /></p>
+
+<p>From this, we can determine two things. The first is that
+<strong>[0x50f500]</strong> will hold the current number of players in the
+game. We will need this value later when we are iterating through all the
+players to aim at them. The second is that <strong>eax</strong> is being
+compared to this value, with a <strong>jmp</strong> below that executes if
+<strong>eax</strong> is less than this value. This means that we are most
+likely in code responsible for looping through all the active players. A
+few lines below, you will notice the following code:</p>
+
+<p><img src="/assets/images/5/6/cube11.png" alt="Code For Finding Current Player Looked at" /></p>
+
+<p>This code is loading a static memory address into <strong>ecx</strong> and
+then retrieving a new address based on that address’s value combined with
+an offset from <strong>eax</strong>. This new value is then loaded into
+<strong>esi</strong>. The first time this loop occurs, the value of
+<strong>esi</strong> is 0:</p>
+
+<p><img src="/assets/images/5/6/cube12.png" alt="Code For Finding Current Player Looked at" /></p>
+
+<p>However, if we continue and execute the loop again,
+<strong>esi</strong> holds a different value:</p>
+
+<p><img src="/assets/images/5/6/cube13.png" alt="Code For Finding Current Player Looked at" /></p>
+
+<p>If we examine <strong>esi</strong>’s value in the dump, we can see that it
+is always near an address that holds a player’s name:</p>
+
+<p><img src="/assets/images/5/6/cube14.png" alt="Code For Finding Current Player Looked at" /></p>
+
+<p>This is most likely the enemy player’s structure in memory, as one of the
+values that will be held in this structure is the player’s name. For now,
+we have identified that the list of enemies is held at
+<strong>[0x50f4f8]</strong>, with each enemy being at
+<strong>[[0x50f4f8] + 4,8,C…]</strong>. Once we find our player’s
+structure, we will reverse exactly how the player structure is laid out in
+memory.</p>
+
+<h1 id="locating-our-player">Locating Our Player</h1>
+
+<p>Next, we need to locate where our own player is stored in memory. Since we
+can never look at ourselves, we need to find our player in a different
+manner. Many games have a way to print your current position and view
+angle to the screen. In Assault Cube, this can be done with
+<em>dbgpos 1</em>. When turned on with <em>showstats 1</em>, the output looks
+like:</p>
+
+<p><img src="/assets/images/5/6/cube15.png" alt="dbgpos" /></p>
+
+<p>If your target does not have this feature, you will instead have to search
+for unknown values and then filter while carefully moving your mouse or
+player in a single direction. In Assault Cube, it looks like our view
+angle is represented by <em>yaw</em> (left and right) and <em>pitch</em> (up
+and down), with both values in degrees. We will need to keep this model in
+mind for later. For now, we know that our player structure will have to
+contain these values. In Cheat Engine, we can search for our yaw in memory
+and then see what accesses the address:</p>
+
+<p><img src="/assets/images/5/6/cube16.png" alt="Yaw address" /></p>
+
+<p>The <strong>fstp</strong> instruction copies a floating point number into
+the address specified. In this case, that address is based on
+<strong>ecx</strong>. If we examine this instruction in x64dbg and then
+view several lines above, we can find where <strong>ecx</strong> is being
+set:</p>
+
+<p><img src="/assets/images/5/6/cube17.png" alt="Yaw address" /></p>
+
+<p>If we examine the memory pointed to by <strong>[0x509b74]</strong>, we see
+a structure identical to what we observed with enemies, with our player’s
+name appearing near this address:</p>
+
+<p><img src="/assets/images/5/6/cube18.png" alt="Player address" /></p>
+
+<p>This most likely represents our player’s structure. Since we have more
+control over the values in this structure, we can begin reversing it.</p>
+
+<h1 id="reversing-player-structure">Reversing Player Structure</h1>
+
+<p>We know that the game must store data about each player in memory. This
+data will generally be in a continuous section of memory. In C or C++,
+this would be represented as a structure or a class. For example, a game
+might define the <strong>Player</strong> structure like:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">struct</span> <span class="nc">Player</span> <span class="p">{</span>
+  <span class="kt">float</span> <span class="n">x</span><span class="p">;</span>
+  <span class="kt">float</span> <span class="n">y</span><span class="p">;</span>
+  <span class="kt">float</span> <span class="n">z</span><span class="p">;</span>
+  <span class="kt">float</span> <span class="n">yaw</span><span class="p">;</span>
+  <span class="kt">float</span> <span class="n">pitch</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">model_texture_path</span><span class="p">[</span><span class="mi">128</span><span class="p">];</span>
+  <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">128</span><span class="p">];</span>
+  <span class="kt">bool</span> <span class="n">alive</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>When viewed in x64dbg, this structure will appear as a long section of
+memory since data has no concept of its type. To identify this data, we
+will need to reverse the structure. x64dbg allows you to modify the data
+representation in the dump. The default view is hex with ASCII
+representation. We will start by trying to find the values for our
+position, which is represented by three float values. We can right-click
+and choose <em>Float</em> to have the dump data displayed in this format:</p>
+
+<p><img src="/assets/images/5/6/cube19.png" alt="Player address" /></p>
+
+<p>Upon doing so, several values should jump out immediately, which represent
+our X, Y, and Z:</p>
+
+<p><img src="/assets/images/5/6/cube20.png" alt="Player address" /></p>
+
+<p>Similarly, our yaw and pitch are easily observable as well:</p>
+
+<p><img src="/assets/images/5/6/cube21.png" alt="Player address" /></p>
+
+<h1 id="changing-our-view-angle">Changing our View Angle</h1>
+
+<p>At this point, we have all the offsets we need to start creating our
+aimbot. The first step is making a DLL that will continuously spin our
+player in a circle. We want to start with this to ensure that we have
+correctly located our player and reversed the player structure correctly.
+Like we have done previously, we will start by creating a thread that will
+run inside the game’s process:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;Windows.h&gt;</span><span class="cp">
+</span>
+<span class="kt">void</span> <span class="nf">injected_thread</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//aimbot code</span>
+    <span class="n">Sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">BOOL</span> <span class="n">WINAPI</span> <span class="nf">DllMain</span><span class="p">(</span><span class="n">HINSTANCE</span> <span class="n">hinstDLL</span><span class="p">,</span> <span class="n">DWORD</span> <span class="n">fdwReason</span><span class="p">,</span> <span class="n">LPVOID</span> <span class="n">lpvReserved</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">fdwReason</span> <span class="o">==</span> <span class="n">DLL_PROCESS_ATTACH</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">CreateThread</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="n">LPTHREAD_START_ROUTINE</span><span class="p">)</span><span class="n">injected_thread</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>We have covered this code several times in previous lessons. Next, we need to
+define our <strong>Player</strong> structure above our
+<strong>injected_thread</strong> function:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">struct</span> <span class="nc">Player</span> <span class="p">{</span>
+
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>From our work before, we know that our X, Y, and Z members are at the
+<strong>base+4</strong>, <strong>base+8</strong>, and
+<strong>base+C</strong>, respectively. We don’t know what the first 4
+bytes represent, but we luckily don’t need to. Instead, we can create a
+placeholder member that is an array of characters. We choose characters
+since they are 1 byte long. We can then create float members for our X, Y,
+and Z values:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">struct</span> <span class="nc">Player</span> <span class="p">{</span>
+  <span class="kt">char</span> <span class="n">unknown1</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>
+  <span class="kt">float</span> <span class="n">x</span><span class="p">;</span>
+  <span class="kt">float</span> <span class="n">y</span><span class="p">;</span>
+  <span class="kt">float</span> <span class="n">z</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Next, we need to add in our <strong>yaw</strong> and
+<strong>pitch</strong> members. If we look at the memory, we see that
+<strong>Z</strong> ends at <code class="language-plaintext highlighter-rouge">0xc3a230</code> and
+<strong>yaw</strong> begins at <code class="language-plaintext highlighter-rouge">0xc3a260</code>. Like the placeholder
+above, we will use a <strong>char</strong> member to add
+<code class="language-plaintext highlighter-rouge">0x30</code> bytes of padding before adding our
+<strong>yaw</strong> and <strong>pitch</strong>:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">struct</span> <span class="nc">Player</span> <span class="p">{</span>
+  <span class="kt">char</span> <span class="n">unknown1</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>
+  <span class="kt">float</span> <span class="n">x</span><span class="p">;</span>
+  <span class="kt">float</span> <span class="n">y</span><span class="p">;</span>
+  <span class="kt">float</span> <span class="n">z</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">unknown2</span><span class="p">[</span><span class="mh">0x30</span><span class="p">];</span>
+  <span class="kt">float</span> <span class="n">yaw</span><span class="p">;</span>
+  <span class="kt">float</span> <span class="n">pitch</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>We will then create a pointer from this structure that we will use to map
+the game’s memory into later:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Player</span> <span class="o">*</span><span class="n">player</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>With our structure created, we can now map the game’s memory of the player
+to our structure. First, we will create a pointer to
+<code class="language-plaintext highlighter-rouge">0x509b74</code> in our <strong>while</strong> loop, since this
+represents the base address of our player:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">DWORD</span> <span class="o">*</span><span class="n">player_offset</span> <span class="o">=</span> <span class="p">(</span><span class="n">DWORD</span><span class="o">*</span><span class="p">)(</span><span class="mh">0x509B74</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Next, we will dereference this pointer to get the value of the player’s
+base address. We will then map the dereferenced address to our
+<strong>Player</strong> structure pointer. This will store the values we
+observed in the dump into this structure so that we can reference them in
+our code.</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">player</span> <span class="o">=</span> <span class="p">(</span><span class="n">Player</span><span class="o">*</span><span class="p">)(</span><span class="o">*</span><span class="n">player_offset</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Finally, we will increase the <strong>yaw</strong> member in a loop to
+cause our player to spin in a circle:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">player</span><span class="o">-&gt;</span><span class="n">yaw</span><span class="o">++</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>From here, we can build and inject this DLL. Our player will now spin
+around in a circle, showing that we have correctly reversed the player
+structure.</p>
+
+<h1 id="aiming-left-and-right">Aiming Left and Right</h1>
+
+<p>With all of this in place, we can create the first version of our aimbot.
+This version will aim left and right at a single opponent. When testing
+this out, make sure to create a two-player game, with you and a single
+bot. This will let you nail down the math.</p>
+
+<p>First, we will use the same approach as before to map the first enemy into
+a <strong>Player</strong> structure. When reversing the code, we
+identified that the first enemy was at <strong>+4</strong>:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">DWORD</span><span class="o">*</span> <span class="n">enemy_list</span> <span class="o">=</span> <span class="p">(</span><span class="n">DWORD</span><span class="o">*</span><span class="p">)(</span><span class="mh">0x50F4F8</span><span class="p">);</span>
+<span class="n">DWORD</span><span class="o">*</span> <span class="n">enemy_offset</span> <span class="o">=</span> <span class="p">(</span><span class="n">DWORD</span><span class="o">*</span><span class="p">)(</span><span class="o">*</span><span class="n">enemy_list</span> <span class="o">+</span> <span class="mi">4</span><span class="p">);</span>
+<span class="n">Player</span><span class="o">*</span> <span class="n">enemy</span> <span class="o">=</span> <span class="p">(</span><span class="n">Player</span><span class="o">*</span><span class="p">)(</span><span class="o">*</span><span class="n">enemy_offset</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>One issue with our previous code was that we would crash if we were not in
+a game. That’s because we were accessing memory that wasn’t valid. To
+prevent this, we will check to make sure both of our pointers are valid
+before continuing:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="n">player</span> <span class="o">!=</span> <span class="nb">NULL</span> <span class="o">&amp;&amp;</span> <span class="n">enemy</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+</code></pre></div></div>
+
+<p>At the beginning of this lesson, we had the following graph:</p>
+
+<p><img src="/assets/images/5/6/cube7.png" alt="3D Representation" /></p>
+
+<p>In this graph, we knew the opposite and adjacent distances based on the
+enemy’s position. However, as we have seen when reversing, our position is
+never (0, 0). Instead, the graph would look more like:</p>
+
+<p><img src="/assets/images/5/6/cube22.png" alt="3D Representation" /></p>
+
+<p>If we attempt to use the enemy’s position, our calculations will be
+incorrect. Instead, we need to determine these values by subtracting the
+player’s position from the enemy’s position. This will give us values that
+will act as if the player is always at (0, 0), or the absolute position
+(<strong>abspos</strong>) between our player and the enemy:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">float</span> <span class="n">abspos_x</span> <span class="o">=</span> <span class="n">enemy</span><span class="o">-&gt;</span><span class="n">x</span> <span class="o">-</span> <span class="n">player</span><span class="o">-&gt;</span><span class="n">x</span><span class="p">;</span>
+<span class="kt">float</span> <span class="n">abspos_y</span> <span class="o">=</span> <span class="n">enemy</span><span class="o">-&gt;</span><span class="n">y</span> <span class="o">-</span> <span class="n">player</span><span class="o">-&gt;</span><span class="n">y</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Next, we can calculate the arctangent using the
+<strong>atan2f</strong> function. We use this function as opposed to
+<strong>atanf</strong>, as it takes care of the case in which
+<strong>abspos_y</strong> is less than 0. Since the inverse tangent is an
+unsigned operation (i.e., it doesn’t have a concept of positive or
+negative), our aimbot would aim in the opposite direction if the enemy was
+directly behind us. We could manually check for this by checking
+<strong>abspos_y</strong>, but <strong>atan2f</strong> takes care of this
+calculation for us:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;math.h&gt;</span><span class="cp">
+</span>
+<span class="p">...</span>
+<span class="kt">float</span> <span class="n">azimuth_xy</span> <span class="o">=</span> <span class="n">atan2f</span><span class="p">(</span><span class="n">abspos_y</span><span class="p">,</span> <span class="n">abspos_x</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>The <strong>atan2f</strong> function produces a radian value. When
+reversing, we saw that the game represents our yaw as a degree value. To
+convert the radian to a degree value, we can multiply the radian by
+<strong>(180 / π)</strong>:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#define M_PI 3.14159265358979323846
+</span>
+<span class="p">...</span>            
+<span class="kt">float</span> <span class="n">yaw</span> <span class="o">=</span> <span class="p">(</span><span class="kt">float</span><span class="p">)(</span><span class="n">azimuth_xy</span> <span class="o">*</span> <span class="p">(</span><span class="mf">180.0</span> <span class="o">/</span> <span class="n">M_PI</span><span class="p">));</span>
+</code></pre></div></div>
+
+<p>Finally, we can set our player’s <strong>yaw</strong> to this value:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">player</span><span class="o">-&gt;</span><span class="n">yaw</span> <span class="o">=</span> <span class="n">yaw</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>If you inject this code into the game, you will notice that you aim close
+to the player, but always a consistent amount of pixels to the left or
+right, depending on where you are standing. This is because in our
+graphing model, we assumed that 0° was facing straight ahead. However, if
+you join a game without the hack, you will notice your player’s starting
+yaw is 90°. To compensate for this, we can simply add
+<strong>90</strong> to our calculated yaw:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">player</span><span class="o">-&gt;</span><span class="n">yaw</span> <span class="o">=</span> <span class="n">yaw</span> <span class="o">+</span> <span class="mi">90</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>With this change, we can run around the map and constantly stay locked on
+a player. However, if we jump up and down or go up an incline, we will be
+aiming above or below the enemy. Our next step is to set our pitch (or up
+and down) value correctly.</p>
+
+<h1 id="aiming-up-and-down">Aiming Up and Down</h1>
+
+<p>When we first approached this problem, we quickly set our perspective as
+top-down to eliminate the Z axis. To calculate our up and down angle, we
+will now fix our perspective as right-left (i.e., on the right of the
+player, looking directly at the player’s right side). The most important
+thing to note in our new graph below is the different axis values:</p>
+
+<p><img src="/assets/images/5/6/cube23.png" alt="3D Representation" /></p>
+
+<p>We can use a similar approach to the left and right angle to calculate the
+up and down angle. First, we will get the absolute distance:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">float</span> <span class="n">abspos_z</span> <span class="o">=</span> <span class="n">enemy</span><span class="o">-&gt;</span><span class="n">z</span> <span class="o">-</span> <span class="n">player</span><span class="o">-&gt;</span><span class="n">z</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Then, like before, we will calculate the inverse tangent. Unlike the yaw,
+our initial pitch starts at 0, so we don’t need to add any value to it:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">float</span> <span class="n">azimuth_z</span> <span class="o">=</span> <span class="n">atan2f</span><span class="p">(</span><span class="n">abspos_z</span><span class="p">,</span> <span class="n">abspos_y</span><span class="p">);</span>
+<span class="n">player</span><span class="o">-&gt;</span><span class="n">pitch</span> <span class="o">=</span> <span class="p">(</span><span class="kt">float</span><span class="p">)(</span><span class="n">azimuth_z</span> <span class="o">*</span> <span class="p">(</span><span class="mf">180.0</span> <span class="o">/</span> <span class="n">M_PI</span><span class="p">));</span>
+</code></pre></div></div>
+
+<p>If you inject this code, it will appear to initially work. However, when
+you get within arm’s distance of an enemy, your player will suddenly look
+straight up or straight down. This is due to the game having very limited
+Z values. For example, most maps in the game have Z values between 0 and 6. When the value of Y gets too small, the resulting equation ends up
+being skewed. Imagine the case where the difference in Z values was 3 but
+the Y value difference was 1, or arctan(3 / 1). This resolves to 75°,
+which is effectively straight up in the air when it comes to pitch.</p>
+
+<p>To account for this behavior, we will look at the value of Y and ensure
+that it is reasonably large. If it’s not, we will use X. This is not
+perfect, but it will help alleviate some of the issues. We will also
+ensure that the value is positive, regardless:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="n">abspos_y</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">abspos_y</span> <span class="o">*=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">abspos_y</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">abspos_x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">abspos_x</span> <span class="o">*=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">abspos_y</span> <span class="o">=</span> <span class="n">abspos_x</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Now you will notice that you can run up directly to the enemy and your aim
+will not jump in the air. Our aimbot is now working for a single enemy.</p>
+
+<h1 id="multiple-enemies">Multiple Enemies</h1>
+
+<p>With this foundation down, we can modify our aimbot to work with multiple
+enemies. To do this, we will change the code to iterate through the enemy
+list, pick an enemy to aim at, and set our yaw and pitch to aim at them.
+To pick the enemy, we will choose to always select the enemy closest to
+us. This will not always be the best case. For example, if one enemy is
+down a hall and one enemy is behind a wall next to us, our aimbot will
+always pick the enemy behind the wall. However, for the purpose of this
+lab, this method is the easiest to implement.</p>
+
+<p>To find the enemy closest to us, we will calculate the Euclidean distance
+between our player and the enemy. The lower the value, the closer the
+enemy is to us:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">float</span> <span class="nf">euclidean_distance</span><span class="p">(</span><span class="kt">float</span> <span class="n">x</span><span class="p">,</span> <span class="kt">float</span> <span class="n">y</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">sqrtf</span><span class="p">((</span><span class="n">x</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">y</span> <span class="o">*</span> <span class="n">y</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Since we need to iterate over a list of enemies, we will create a variable
+to hold the closest enemy distance, as well as their associated yaw and
+pitch values:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">DWORD</span><span class="o">*</span> <span class="n">player_offset</span> <span class="o">=</span> <span class="p">(</span><span class="n">DWORD</span><span class="o">*</span><span class="p">)(</span><span class="mh">0x509B74</span><span class="p">);</span>
+  <span class="n">player</span> <span class="o">=</span> <span class="p">(</span><span class="n">Player</span><span class="o">*</span><span class="p">)(</span><span class="o">*</span><span class="n">player_offset</span><span class="p">);</span>
+  <span class="p">...</span>
+  <span class="kt">float</span> <span class="n">closest_player</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.0</span><span class="n">f</span><span class="p">;</span>
+  <span class="kt">float</span> <span class="n">closest_yaw</span> <span class="o">=</span> <span class="mf">0.0</span><span class="n">f</span><span class="p">;</span>
+  <span class="kt">float</span> <span class="n">closest_pitch</span> <span class="o">=</span> <span class="mf">0.0</span><span class="n">f</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>At the beginning of this lesson, we determined the address that held the
+current number of players in the game. We can finally use that value now:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span><span class="o">*</span> <span class="n">current_players</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="o">*</span><span class="p">)(</span><span class="mh">0x50F500</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>We can now iterate over all the enemies in the game. Unlike before, where
+we always added 4, we will now add the current loop index multiplied by 4,
+identically to how the game did it:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="o">*</span><span class="n">current_players</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">DWORD</span><span class="o">*</span> <span class="n">enemy_list</span> <span class="o">=</span> <span class="p">(</span><span class="n">DWORD</span><span class="o">*</span><span class="p">)(</span><span class="mh">0x50F4F8</span><span class="p">);</span>
+  <span class="n">DWORD</span><span class="o">*</span> <span class="n">enemy_offset</span> <span class="o">=</span> <span class="p">(</span><span class="n">DWORD</span><span class="o">*</span><span class="p">)(</span><span class="o">*</span><span class="n">enemy_list</span> <span class="o">+</span> <span class="p">(</span><span class="n">i</span><span class="o">*</span><span class="mi">4</span><span class="p">));</span>
+  <span class="n">Player</span><span class="o">*</span> <span class="n">enemy</span> <span class="o">=</span> <span class="p">(</span><span class="n">Player</span><span class="o">*</span><span class="p">)(</span><span class="o">*</span><span class="n">enemy_offset</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>We can then calculate the absolute positions like we did before. However,
+before calculating the yaw or pitch, we will calculate the distance from
+our player to the enemy and ensure that they are the closest enemy. If
+they are, we will then set the <strong>closest_player</strong> value to
+their distance for future checks:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">float</span> <span class="n">temp_distance</span> <span class="o">=</span> <span class="n">euclidean_distance</span><span class="p">(</span><span class="n">abspos_x</span><span class="p">,</span> <span class="n">abspos_y</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">closest_player</span> <span class="o">==</span> <span class="o">-</span><span class="mf">1.0</span><span class="n">f</span> <span class="o">||</span> <span class="n">temp_distance</span> <span class="o">&lt;</span> <span class="n">closest_player</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">closest_player</span> <span class="o">=</span> <span class="n">temp_distance</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Next, instead of directly setting the player’s yaw and pitch, we will
+store these in our variables. Once we have iterated over all the enemies,
+we will set the player’s yaw and pitch. This ensures that we aren’t
+constantly flickering through multiple enemies:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">closest_yaw</span> <span class="o">=</span> <span class="n">yaw</span> <span class="o">+</span> <span class="mi">90</span><span class="p">;</span>
+<span class="p">...</span>
+
+<span class="n">closest_pitch</span> <span class="o">=</span> <span class="p">(</span><span class="kt">float</span><span class="p">)(</span><span class="n">azimuth_z</span> <span class="o">*</span> <span class="p">(</span><span class="mf">180.0</span> <span class="o">/</span> <span class="n">M_PI</span><span class="p">));</span>
+<span class="p">...</span>
+
+<span class="n">player</span><span class="o">-&gt;</span><span class="n">yaw</span> <span class="o">=</span> <span class="n">closest_yaw</span><span class="p">;</span>
+<span class="n">player</span><span class="o">-&gt;</span><span class="n">pitch</span> <span class="o">=</span> <span class="n">closest_pitch</span><span class="p">;</span>
+
+<span class="n">Sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>We now have a working aimbot that will iterate through multiple enemies
+and aim at the closest one correctly in the X and Y axis.</p>
+
+<p>Finally, we can add a check to see if the enemy is alive, to ensure that
+we instantly switch from a target when we shoot them. This value can be
+found by observing the player structure for values that change when you
+are alive or dead. After killing yourself several times, you will notice
+that one value is set to 0 when you are alive and 1 when you are dead:</p>
+
+<p><img src="/assets/images/5/6/cube24.png" alt="3D Representation" /></p>
+
+<p>We can add this to our player structure, ensuring that we correctly offset
+it:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kt">float</span> <span class="n">yaw</span><span class="p">;</span>
+  <span class="kt">float</span> <span class="n">pitch</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">unknown3</span><span class="p">[</span><span class="mh">0x2f0</span><span class="p">];</span>
+  <span class="kt">int</span> <span class="n">dead</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>We can then check this value in our initial check to ensure that the
+player and enemy are valid:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="n">player</span> <span class="o">!=</span> <span class="nb">NULL</span> <span class="o">&amp;&amp;</span> <span class="n">enemy</span> <span class="o">!=</span> <span class="nb">NULL</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">enemy</span><span class="o">-&gt;</span><span class="n">dead</span><span class="p">)</span> <span class="p">{</span>
+</code></pre></div></div>
+<p>The final result:</p>
+
+<video controls="" autoplay="" loop="">
+  <source src="/assets/images/5/6/cube.mp4" />
+</video>
+
+<p>The full code is available on <a href="https://github.com/GameHackingAcademy/AssaultCube_Aimbot/">github</a> for comparison.</p>
+
+<p> </p>
+
+
+                </section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+          <a
+            href="/pages/5/05/"
+            class="navigation navigation-prev navigation-unique"
+            aria-label="Previous page: Triggerbot"
+          >
+            <i class="fa fa-angle-left"></i>
+          </a>
+           
+          <a
+            href="/pages/5/07/"
+            class="navigation navigation-next navigation-unique"
+            aria-label="Next page: No Recoil"
+          >
+            <i class="fa fa-angle-right"></i>
+          </a>
+          
+        </div>
+      </div>
+
+      <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "No Recoil",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/5/07.md",
+            "ref": "_pages/5/07.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {
+                "facebook": false,
+
+                "google": false,
+
+                "github": true,
+                "github_link": "https://github.com/GameHackingAcademy",
+
+                "telegram": false,
+                "telegram_link": "https://t.me",
+
+                "instapaper": false,
+
+                "twitter": true,
+                "twitter_link": "https://twitter.com/GameHackingAcad",
+
+                "vk": false,
+
+                "weibo": false
+            },
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            }
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Game Hacking Academy",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_pages/5/06.md",
+        "mtime": "2023-12-25 00:00:00 -0600",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2023-12-26 18:36:09 -0600"
+    },
+    "basePath": "",
+    "book": {
+        "language": ""
+    }
+});
+        });
+      </script>
+    </div><script src="/assets/gitbook/gitbook.js"></script>
+<script src="/assets/gitbook/theme.js"></script>
+
+<script src="/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+
+<!-- <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script> -->
+
+<script src="/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+
+<!-- trackers --><!-- google analytics --><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160704775-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-160704775-1');
+</script>
+<script>
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 20,
+            density: {
+              enable: true,
+              value_area: 100,
+            },
+          },
+          color: {
+            value: "#6195b9",
+          },
+          shape: {
+            type: "edge",
+          },
+          opacity: {
+            value: 0.3,
+            anim: {
+              enable: true,
+              speed: 0.1,
+              opacity_min: 0,
+              sync: false,
+            },
+          },
+          size: {
+            value: 15,
+            random: true,
+          },
+          line_linked: {
+            enable: false,
+          },
+          move: {
+            enable: true,
+            speed: 0.5,
+            direction: "top",
+            random: true,
+            straight: true,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+            },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: false,
+            },
+            onclick: {
+              enable: false,
+            },
+            resize: true,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

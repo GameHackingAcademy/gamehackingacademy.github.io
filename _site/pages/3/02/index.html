@@ -1,0 +1,1821 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>External Memory Hack · Game Hacking Academy</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Game hacking tutorials and lessons.
+"><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="attilathedud"><link rel="stylesheet" href="/assets/gitbook/style.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+
+<link rel="stylesheet" href="/assets/gitbook/rouge/base16.css">
+
+<link rel="stylesheet" href="/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+
+<script src="/assets/particles.min.js"></script>
+
+<style>
+    @media screen and (min-width: 1101px) {
+      .eyecandy {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        min-height: 50%;
+        height: 50%;
+        width: 25%;
+        pointer-events: none;
+        z-index: 1;
+      }
+    }
+    @media screen and (max-width: 1100px) {
+      .eyecandy {
+        display: none;
+      }
+    }
+  </style>
+
+
+
+
+
+
+    <link rel="prev" href="/pages/3/01/" />
+     
+    <link rel="next" href="/pages/3/03/" />
+    
+    
+  </head>
+  <body>
+    <div id="particles-js" class="eyecandy"></div>
+
+    <div class="book color-theme-2"><div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;  // propagate
+        }
+        // Fixes the anchor links scroll problem on mobile browsers
+        function mobilePageScrollToAnchor(element) {
+            $(element).closest('li.chapter').find('ul>li').removeClass('active');
+            $(element).parent().addClass('active');
+            if ($(document).width() <= 1240) {
+                $('div.body-inner').animate({scrollTop: $($(element).attr('href')).get(0).offsetTop});
+            }
+            return true;
+        }
+    </script>
+
+    <nav role="navigation">
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/assets/search.html">Click to Search</a>
+        </div>
+        <ul class="summary">
+            
+                <!-- <p>pages</p> -->
+                
+                    
+
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/">
+                        
+                            <a href="/" onclick="pageScrollToTop(this)">
+                                About
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                            <li class="divider-header">
+                                <a>Basics</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/1/01/">
+                        
+                            <a href="/pages/1/01/" onclick="pageScrollToTop(this)">
+                                Computer Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/1/02/">
+                        
+                            <a href="/pages/1/02/" onclick="pageScrollToTop(this)">
+                                Game Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/1/03/">
+                        
+                            <a href="/pages/1/03/" onclick="pageScrollToTop(this)">
+                                Hacking Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/1/04/">
+                        
+                            <a href="/pages/1/04/" onclick="pageScrollToTop(this)">
+                                Setting Up a VM
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/1/05/">
+                        
+                            <a href="/pages/1/05/" onclick="pageScrollToTop(this)">
+                                Memory Hack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>Debugging & Reversing</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/01/">
+                        
+                            <a href="/pages/2/01/" onclick="pageScrollToTop(this)">
+                                Debugging Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/02/">
+                        
+                            <a href="/pages/2/02/" onclick="pageScrollToTop(this)">
+                                Assembly Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/03/">
+                        
+                            <a href="/pages/2/03/" onclick="pageScrollToTop(this)">
+                                Using Breakpoints
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/04/">
+                        
+                            <a href="/pages/2/04/" onclick="pageScrollToTop(this)">
+                                Changing Game Code
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/05/">
+                        
+                            <a href="/pages/2/05/" onclick="pageScrollToTop(this)">
+                                Reversing Code
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/06/">
+                        
+                            <a href="/pages/2/06/" onclick="pageScrollToTop(this)">
+                                Code Caves
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/07/">
+                        
+                            <a href="/pages/2/07/" onclick="pageScrollToTop(this)">
+                                Using Code Caves
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/08/">
+                        
+                            <a href="/pages/2/08/" onclick="pageScrollToTop(this)">
+                                Dynamic Memory Allocation
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/09/">
+                        
+                            <a href="/pages/2/09/" onclick="pageScrollToTop(this)">
+                                Defeating DMA
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>Programming</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/3/01/">
+                        
+                            <a href="/pages/3/01/" onclick="pageScrollToTop(this)">
+                                Programming Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter active" data-level="1.2" data-path="/pages/3/02/">
+                        
+                            <a href="/pages/3/02/" onclick="pageScrollToTop(this)">
+                                External Memory Hack
+                            </a>
+                            
+                                
+                                    <ul><li><a href="#target" onclick="mobilePageScrollToAnchor(this)" >Target</a></li><li><a href="#identify" onclick="mobilePageScrollToAnchor(this)" >Identify</a></li><li><a href="#understand" onclick="mobilePageScrollToAnchor(this)" >Understand</a></li><li><a href="#visual-studio" onclick="mobilePageScrollToAnchor(this)" >Visual Studio</a></li><li><a href="#creating-projects" onclick="mobilePageScrollToAnchor(this)" >Creating Projects</a></li><li><a href="#c-basics" onclick="mobilePageScrollToAnchor(this)" >C++ Basics</a></li><li><a href="#reading-values" onclick="mobilePageScrollToAnchor(this)" >Reading Values</a></li><li><a href="#opening-processes" onclick="mobilePageScrollToAnchor(this)" >Opening Processes</a></li><li><a href="#casting-parameters" onclick="mobilePageScrollToAnchor(this)" >Casting Parameters</a></li><li><a href="#debugging" onclick="mobilePageScrollToAnchor(this)" >Debugging</a></li><li><a href="#dma" onclick="mobilePageScrollToAnchor(this)" >DMA</a></li><li><a href="#writing-memory" onclick="mobilePageScrollToAnchor(this)" >Writing Memory</a></li></ul>
+
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/3/03/">
+                        
+                            <a href="/pages/3/03/" onclick="pageScrollToTop(this)">
+                                DLL Memory Hack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/3/04/">
+                        
+                            <a href="/pages/3/04/" onclick="pageScrollToTop(this)">
+                                Code Caves &amp; DLL&#39;s
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/3/05/">
+                        
+                            <a href="/pages/3/05/" onclick="pageScrollToTop(this)">
+                                Printing Text
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>RTS/RPG Hacks</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/4/01/">
+                        
+                            <a href="/pages/4/01/" onclick="pageScrollToTop(this)">
+                                Stathack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/4/02/">
+                        
+                            <a href="/pages/4/02/" onclick="pageScrollToTop(this)">
+                                Map Hack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/4/03/">
+                        
+                            <a href="/pages/4/03/" onclick="pageScrollToTop(this)">
+                                Macro Bot
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/4/04/">
+                        
+                            <a href="/pages/4/04/" onclick="pageScrollToTop(this)">
+                                Farming Bot
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>FPS Hacks</a>
+                            </li>
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/01/">
+                        
+                            <a href="/pages/5/01/" onclick="pageScrollToTop(this)">
+                                3D Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/02/">
+                        
+                            <a href="/pages/5/02/" onclick="pageScrollToTop(this)">
+                                Wallhack (Memory)
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/03/">
+                        
+                            <a href="/pages/5/03/" onclick="pageScrollToTop(this)">
+                                Wallhack (OpenGL)
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/04/">
+                        
+                            <a href="/pages/5/04/" onclick="pageScrollToTop(this)">
+                                Chams (OpenGL)
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/05/">
+                        
+                            <a href="/pages/5/05/" onclick="pageScrollToTop(this)">
+                                Triggerbot
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/06/">
+                        
+                            <a href="/pages/5/06/" onclick="pageScrollToTop(this)">
+                                Aimbot
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/07/">
+                        
+                            <a href="/pages/5/07/" onclick="pageScrollToTop(this)">
+                                No Recoil
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/08/">
+                        
+                            <a href="/pages/5/08/" onclick="pageScrollToTop(this)">
+                                Radar Hack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/09/">
+                        
+                            <a href="/pages/5/09/" onclick="pageScrollToTop(this)">
+                                ESP
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/10/">
+                        
+                            <a href="/pages/5/10/" onclick="pageScrollToTop(this)">
+                                Multihack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>Multiplayer</a>
+                            </li>
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/6/01/">
+                        
+                            <a href="/pages/6/01/" onclick="pageScrollToTop(this)">
+                                Multiplayer Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/6/02/">
+                        
+                            <a href="/pages/6/02/" onclick="pageScrollToTop(this)">
+                                Packet Analysis
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/6/03/">
+                        
+                            <a href="/pages/6/03/" onclick="pageScrollToTop(this)">
+                                Reversing Packets
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/6/04/">
+                        
+                            <a href="/pages/6/04/" onclick="pageScrollToTop(this)">
+                                Creating an External Client
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/6/05/">
+                        
+                            <a href="/pages/6/05/" onclick="pageScrollToTop(this)">
+                                Proxying TCP Traffic
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>Tool Development</a>
+                            </li>
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/7/01/">
+                        
+                            <a href="/pages/7/01/" onclick="pageScrollToTop(this)">
+                                DLL Injector
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/7/02/">
+                        
+                            <a href="/pages/7/02/" onclick="pageScrollToTop(this)">
+                                Pattern Scanner
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/7/03/">
+                        
+                            <a href="/pages/7/03/" onclick="pageScrollToTop(this)">
+                                Memory Scanner
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/7/04/">
+                        
+                            <a href="/pages/7/04/" onclick="pageScrollToTop(this)">
+                                Disassembler
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/7/05/">
+                        
+                            <a href="/pages/7/05/" onclick="pageScrollToTop(this)">
+                                Debugger
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/7/06/">
+                        
+                            <a href="/pages/7/06/" onclick="pageScrollToTop(this)">
+                                Call Logger
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>Game Resources</a>
+                            </li>
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/8/01/">
+                        
+                            <a href="/pages/8/01/" onclick="pageScrollToTop(this)">
+                                Resource Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/8/02/">
+                        
+                            <a href="/pages/8/02/" onclick="pageScrollToTop(this)">
+                                Modifying Save Data
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/8/03/">
+                        
+                            <a href="/pages/8/03/" onclick="pageScrollToTop(this)">
+                                Modifying Textures
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/8/04/">
+                        
+                            <a href="/pages/8/04/" onclick="pageScrollToTop(this)">
+                                Modifying Units
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                
+            
+                <!-- <p>posts</p> -->
+                
+                    
+
+                    
+                
+            
+        </ul>
+
+        &nbsp;
+    </nav>
+</div>
+<div class="book-body">
+        <div class="book-header" role="navigation">
+          <!-- Title -->
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i>
+            
+            <a href=".">External Memory Hack</a>
+            
+          </h1>
+        </div>
+
+        <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+
+                    <h1 id="target">Target</h1>
+
+<p>Our target in this lesson will be Wesnoth 1.14.9.</p>
+
+<h1 id="identify">Identify</h1>
+
+<p>In this lesson, we will create a C++ program that will modify a player’s gold
+in Wesnoth.</p>
+
+<h1 id="understand">Understand</h1>
+
+<p>In the <a href="/pages/2/08/">Defeating DMA</a> lesson, we defeated DMA in
+Wesnoth and located the player’s base pointer at <code class="language-plaintext highlighter-rouge">0x017EECB8</code>.
+We then determined the offsets necessary to locate the player’s gold from
+the base pointer. This allowed us to start at a static address, add a
+series of static offsets, and reach a dynamic address.</p>
+
+<p>Since these addresses and offsets are static, we can create a program to
+perform this operation. We covered several approaches to do this in <a href="/pages/3/01/">Programming Fundamentals</a> lesson. In this lesson, we
+will create an external executable.</p>
+
+<h1 id="visual-studio">Visual Studio</h1>
+
+<p>To create C++ programs, we need a compiler and a linker. A compiler is
+used to turn high-level language code into opcodes. A linker is used to
+then create an executable that the OS understands from these opcodes.
+These two components are normally bundled into an Integrated Development
+Environment, or IDE. IDE’s contain other components as well, such as
+code-completion and interactive debugging. Visual Studio is an IDE that
+Microsoft has released for Windows. The community edition is free to
+download and use in personal projects. It can be installed using
+Chocolatey, which we installed when first setting up the VM. To do so,
+open up Command Prompt or Powershell and run the following command:</p>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">choco</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="nx">visualstudio2019community</span><span class="w">
+</span></code></pre></div></div>
+
+<p>In Visual Studio, source code files are contained within projects. Several
+of these projects can be contained within a solution. For example, the
+Visual Studio solution for Wesnoth might look like:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Game - Solution
+    Engine - Project
+        Player.cpp - Source Code
+        main.cpp - Source Code
+    UI - Project
+    ...
+    Network - Project
+    ...
+</code></pre></div></div>
+
+<p>To create a C++ solution, we will first need to install some C++
+components. This can be done by selecting the
+<em>Install more tools and features</em> link, and then selecting
+<em>Desktop development</em> with C++ in the wizard.</p>
+
+<p><img src="/assets/images/3/2/ide1.png" alt="C++ Desktop Development Package" /></p>
+
+<p>With these components installed, we can now create C++ projects and
+compile them.</p>
+
+<h1 id="creating-projects">Creating Projects</h1>
+
+<p>Once these components are installed, create an empty C++ project and name
+it <em>ExternalMemoryHack</em>.</p>
+
+<p><img src="/assets/images/3/2/ide2.png" alt="C++ Empty Project" /></p>
+
+<p>With the new project created, we can now add our source code file that
+will contain all of our code. To do this, right-click on
+<em>Source Files</em> and select <em>Add</em> -&gt; <em>New Item</em>:</p>
+
+<p><img src="/assets/images/3/2/ide3.png" alt="Visual Studio Add File" /></p>
+
+<p>In the modal that appears, choose <em>C++ File</em> and name it
+<em>main.cpp</em>:</p>
+
+<p><img src="/assets/images/3/2/ide4.png" alt="Visual Studio Add File" /></p>
+
+<p>With the project and source file created, we can now begin programming.</p>
+
+<h1 id="c-basics">C++ Basics</h1>
+
+<p>C++ has many features and is a versatile language. For our purposes, we
+will focus on the most important ones for creating hacks. For this lesson, we
+need to know two things about the language:</p>
+
+<ol>
+  <li>Programs start at a function called <strong>main</strong>. This function has to return a value.</li>
+  <li>Programs can call other functions built into Windows.</li>
+</ol>
+
+<p>Any C++ executable needs to have a <strong>main</strong> function that
+returns an integer. This function takes two parameters, which are not
+important to know at the moment. When executed, the OS looks for and
+executes this function. When the function returns, it signals to the OS
+that the program is finished executing.</p>
+
+<p>In addition to functions we create, we can call other functions that are
+built into Windows. Windows has many API’s to do things like displaying
+text, playing sounds, and creating files. Windows also has API’s that
+allow us to read and write values to an address in a process. These are
+what we will use to create our hack.</p>
+
+<p>To use these functions, we need to include certain header files. Header
+files contain definitions for functions that are defined outside of our
+source file. To read and write memory, we will need to include the header
+file <strong>Windows.h</strong>.</p>
+
+<h1 id="reading-values">Reading Values</h1>
+
+<p>We need to read several values in Wesnoth to locate our gold value. The
+API to read another process’s memory is called
+<strong>ReadProcessMemory</strong>. If you google this name, the first
+result will be <a href="https://docs.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-readprocessmemory">documentation by Microsoft</a>. This documentation describes how the API works, including what
+parameters it takes and what values it returns.</p>
+
+<p>By examining this documentation, we can determine what values we need to
+provide. For any values we still need, we can then determine how to get
+them.</p>
+
+<p><strong>ReadProcessMemory</strong>’s function definition is:</p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">BOOL</span> <span class="nf">ReadProcessMemory</span><span class="p">(</span>
+    <span class="n">HANDLE</span>  <span class="n">hProcess</span><span class="p">,</span>
+    <span class="n">LPCVOID</span> <span class="n">lpBaseAddress</span><span class="p">,</span>
+    <span class="n">LPVOID</span>  <span class="n">lpBuffer</span><span class="p">,</span>
+    <span class="n">SIZE_T</span>  <span class="n">nSize</span><span class="p">,</span>
+    <span class="n">SIZE_T</span>  <span class="o">*</span><span class="n">lpNumberOfBytesRead</span>
+<span class="p">);</span>
+</code></pre></div></div>
+
+<p>Looking at the code block above, we can start at the first parameter and
+work our way down to determine what values we need. First, we do not have
+a handle to a process, so we will need to find that. We will discuss how
+to do this in the next section. We have the base address (in this case,
+our base pointer). The buffer needs to be provided by us, so we will need
+to create that. The size parameter will be the size of the data to read.
+In this case, the size will be 4 bytes, due to the size of the registers
+we saw while reversing. Finally, we will need to create another variable
+to hold the number of bytes actually read when the function is executed.</p>
+
+<p>While this might seem overwhelming, this gives us a starting point to
+program from. First, we know that we need to include
+<strong>Windows.h</strong> so that we can use
+<strong>ReadProcessMemory</strong>:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;Windows.h&gt;</span><span class="cp">
+</span></code></pre></div></div>
+
+<p>Next, since this is a C++ executable, we will create our
+<strong>main</strong> function:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Finally, in the <strong>main</strong> function, above the
+<strong>return</strong> statement, we can insert our call to
+<strong>ReadProcessMemory</strong>. For values we don’t have yet, we will
+put in a variable name. As we figure out how to retrieve these values, we
+can then assign these variables.</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ReadProcessMemory</span><span class="p">(</span><span class="n">wesnoth_process</span><span class="p">,</span> <span class="mh">0x017EECB8</span><span class="p">,</span> <span class="n">gold_value</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">bytes_read</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Both the <strong>gold_value</strong> and
+<strong>bytes_read</strong> values are provided by us and populated by the
+API. Therefore, we need to initialize two variables to hold these values.
+Since we are reading 4 bytes, these variables need to be large enough to
+hold amounts of this size. One option to accomplish this is to use a
+<strong>DWORD</strong>, which is <a href="https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-dtyp/262627d8-3418-4627-9218-4ffe110850b2">32 bits</a> (or 4 bytes) long. We need to place these declarations above the call to
+<strong>ReadProcessMemory</strong>:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">DWORD</span> <span class="n">gold_value</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">DWORD</span> <span class="n">bytes_read</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Since both of these parameters are expected to be pointers, we need to
+also change our <strong>ReadProcessMemory</strong> call. Instead of
+passing the variable’s value, we need to pass the address of these
+variables using <strong>&amp;</strong>:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ReadProcessMemory</span><span class="p">(</span><span class="n">wesnoth_process</span><span class="p">,</span> <span class="mh">0x017EECB8</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">gold_value</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">bytes_read</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h1 id="opening-processes">Opening Processes</h1>
+
+<p>Our next step is retrieving a process handle. To do this, we can use an
+API called <a href="https://docs.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-openprocess">OpenProcess</a>. The definition for this API is:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">HANDLE</span> <span class="nf">OpenProcess</span><span class="p">(</span>
+    <span class="n">DWORD</span> <span class="n">dwDesiredAccess</span><span class="p">,</span>
+    <span class="n">BOOL</span>  <span class="n">bInheritHandle</span><span class="p">,</span>
+    <span class="n">DWORD</span> <span class="n">dwProcessId</span>
+<span class="p">);</span>
+</code></pre></div></div>
+
+<p>From this definition, we see that <strong>OpenProcess</strong> returns a
+handle to a process. This handle can be used as the first parameter for
+<strong>ReadProcessMemory</strong>. Looking at the documentation, we want
+our desired access to be <strong>PROCESS_ALL_ACCESS</strong>, so that we
+can both read and write to the process. The second parameter does not
+matter for what we are doing, so we will set it to the value of true. We
+will need to find the last parameter, so for now, we will create a
+variable. Since we need the result of this function to call
+<strong>ReadProcessMemory</strong>, we will place the call to it above
+<strong>ReadProcessMemory</strong>. Our code should now look like:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">HANDLE</span> <span class="n">wesnoth_process</span> <span class="o">=</span> <span class="n">OpenProcess</span><span class="p">(</span><span class="n">PROCESS_ALL_ACCESS</span><span class="p">,</span> <span class="nb">true</span><span class="p">,</span> <span class="n">process_id</span><span class="p">);</span>
+
+<span class="n">DWORD</span> <span class="n">gold_value</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">DWORD</span> <span class="n">bytes_read</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">ReadProcessMemory</span><span class="p">(</span><span class="n">wesnoth_process</span><span class="p">,</span> <span class="mh">0x017EECB8</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">gold_value</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">bytes_read</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Next, we will retrieve a <strong>process_id</strong> for the OpenProcess
+call. Similar to the previous two API’s, we will use another API and then
+fill in any information we need. In this case, the API will be <a href="https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getwindowthreadprocessid">GetWindowThreadProcessId.</a> This API retrieves a process ID when provided with a window handle,
+which is different than a process handle. The definition for this API is:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">DWORD</span> <span class="nf">GetWindowThreadProcessId</span><span class="p">(</span>
+    <span class="n">HWND</span>    <span class="n">hWnd</span><span class="p">,</span>
+    <span class="n">LPDWORD</span> <span class="n">lpdwProcessId</span>
+<span class="p">);</span>
+</code></pre></div></div>
+
+<p>This function requires a handle to a window and a variable to hold the
+process ID. Just like before, we will add this code above our call to
+<strong>OpenProcess</strong>:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">DWORD</span> <span class="n">process_id</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">GetWindowThreadProcessId</span><span class="p">(</span><span class="n">wesnoth_window</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">process_id</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>To get a window handle, we can use the API <a href="https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-findwindowa">FindWindow.</a> This function takes the name of a window title and returns a handle to the
+window. The definition is:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">HWND</span> <span class="nf">FindWindowA</span><span class="p">(</span>
+    <span class="n">LPCSTR</span> <span class="n">lpClassName</span><span class="p">,</span>
+    <span class="n">LPCSTR</span> <span class="n">lpWindowName</span>
+<span class="p">);</span>
+</code></pre></div></div>
+
+<p>Since we want to search all windows, we will set the first parameter to
+<strong>NULL</strong>. For the second parameter, we know the name of the
+Wesnoth window, as it is displayed in the game’s title bar. We can insert
+this final call at the top of our <strong>main</strong> function. Right
+now, our code will look like:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;Windows.h&gt;</span><span class="cp">
+</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">HWND</span> <span class="n">wesnoth_window</span> <span class="o">=</span> <span class="n">FindWindow</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span> <span class="s">"The Battle for Wesnoth - 1.14.9"</span><span class="p">);</span>
+
+    <span class="n">DWORD</span> <span class="n">process_id</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">GetWindowThreadProcessId</span><span class="p">(</span><span class="n">wesnoth_window</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">process_id</span><span class="p">);</span>
+
+    <span class="n">HANDLE</span> <span class="n">wesnoth_process</span> <span class="o">=</span> <span class="n">OpenProcess</span><span class="p">(</span><span class="n">PROCESS_ALL_ACCESS</span><span class="p">,</span> <span class="nb">true</span><span class="p">,</span> <span class="n">process_id</span><span class="p">);</span>
+
+    <span class="n">DWORD</span> <span class="n">gold_value</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">DWORD</span> <span class="n">bytes_read</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">ReadProcessMemory</span><span class="p">(</span><span class="n">wesnoth_process</span><span class="p">,</span> <span class="mh">0x017EECB8</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">gold_value</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">bytes_read</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h1 id="casting-parameters">Casting Parameters</h1>
+
+<p>Visual Studio will display several errors for the code we have written.
+This is because we have not properly casted two of our variables. As a
+result, the compiler cannot understand how we want to pass data to a
+function. If we want to compile our program, we will need to fix these
+errors. Luckily, by reading the <em>Error List</em> in Visual Studio, we can
+determine what we need to do to fix these errors.</p>
+
+<p><img src="/assets/images/3/2/ide5.png" alt="Project Errors" /></p>
+
+<p>Let’s address the two <strong>ReadProcessMemory</strong> errors that occur
+on <em>Line 13</em> of the code. The first error for <em>Line 13</em> is
+<em>argument of type “int” is compatible with parameter type “LPCVOID”</em>.
+This indicates that we have a parameter that is an integer that is
+supposed to be a <strong>LPCVOID</strong>. The second error,
+<em>cannot convert argument 2 from ‘int’ to ‘LPCVOID’</em>, indicates which
+parameter this is. <em>Argument 2</em> is our address
+<code class="language-plaintext highlighter-rouge">0x017EECB8</code>. If we google <strong>LPCVOID</strong>, the <a href="https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-dtyp/66996877-9dd4-477d-a811-30e6c1a5525d">first result is Microsoft’s documentation regarding LPCVOID.</a> The documentation shows us that <strong>LPCVOID</strong> is defined as a
+<strong>void</strong>*:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">typedef</span> <span class="k">const</span> <span class="kt">void</span><span class="o">*</span> <span class="n">LPCVOID</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>To solve these errors, we can cast our address as a
+<strong>void</strong>*. The resulting code looks like:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ReadProcessMemory</span><span class="p">(</span><span class="n">wesnoth_process</span><span class="p">,</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span><span class="mh">0x017EECB8</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">gold_value</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">bytes_read</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>With this, those errors will disappear. Now we can examine the second set
+of errors that occur on <em>Line 4</em>, regarding the
+<strong>FindWindow</strong> call. These errors indicate that the
+<strong>The Battle for Wesnoth - 1.14.9</strong> string is not cast
+correctly. It is a <strong>const char</strong>* and needs to be cast as a
+<strong>LPCWSTR</strong>. To do this, we can prefix the string with an
+<strong>L</strong>. Our <strong>FindWindow</strong> call now looks like:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">HWND</span> <span class="n">wesnoth_window</span> <span class="o">=</span> <span class="n">FindWindow</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span> <span class="s">L"The Battle for Wesnoth - 1.14.9"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>After making this change, the errors will disappear and we can now compile
+and execute our program. To do this, go to the <em>Build</em> menu item and
+select <em>Build Solution</em>. Once this completes, we will have a program
+that we can execute.</p>
+
+<p><img src="/assets/images/3/2/ide6.png" alt="Build Menu" /></p>
+
+<h1 id="debugging">Debugging</h1>
+
+<p>To verify that this code works, we need to make sure that we are actually
+reading the correct value at the memory address <code class="language-plaintext highlighter-rouge">0x017EECB8</code>.
+To do this, we will debug our program inside Visual Studio and compare the
+results of our <strong>ReadProcessMemory</strong> call against Cheat
+Engine.</p>
+
+<p>First, open up Cheat Engine and manually add the address
+<code class="language-plaintext highlighter-rouge">0x017EECB8</code>. Then, set a breakpoint on the
+<strong>ReadProcessMemory</strong> line. This can be done by left-clicking
+on the area to the left of the line of code you wish to breakpoint. If
+done correctly, a red circle will appear.</p>
+
+<p><img src="/assets/images/3/2/ide7.png" alt="Build Menu" /></p>
+
+<p>Next, click on the <em>Local Windows Debugger</em> button at the top of the
+IDE. This will begin executing our program with a debugger attached.</p>
+
+<p><img src="/assets/images/3/2/ide8.png" alt="Visual Studio Debugger" /></p>
+
+<p>Since we have written the source code, debugging our program will be far
+easier than debugging Wesnoth. When our breakpoint is reached, the
+debugger will pop and let us explore various elements of the code,
+including our variables. These variables will be shown in the bottom left
+of the IDE. To make sure we are reading memory correctly, we want to look
+at the <strong>gold_value</strong> variable and make sure its value
+matches Cheat Engine.</p>
+
+<p><img src="/assets/images/3/2/ide9.png" alt="Visual Studio Debugger" /></p>
+
+<p>Since the values match, we know that we are correctly reading memory in
+Wesnoth. Hit the <em>Continue</em> button at the top of the IDE to finish
+executing our program. Now we can move on to finding our gold value.</p>
+
+<h1 id="dma">DMA</h1>
+
+<p>Since we can read memory, we can now retrieve our gold value. In <a href="/pages/2/08/">Defeating DMA</a> lesson, we determined that our gold
+address is stored at <code class="language-plaintext highlighter-rouge">[[0x017EECB8 + 0x60] + 0xA90] + 4</code>. This
+can be further simplified to <code class="language-plaintext highlighter-rouge">[[0x017EED18] + 0xA90] + 4</code>. To
+retrieve the gold address in our program, we can first read the value at
+<code class="language-plaintext highlighter-rouge">0x017EED18</code>, then add <code class="language-plaintext highlighter-rouge">0xA90</code> to that value. We can
+then read this address and add 4 to it. Once we have done that, we will
+have our gold address.</p>
+
+<p>To do this entire process, we can use the
+<strong>ReadProcessMemory</strong> call identically to our previous code.
+First, we will read in the value of <code class="language-plaintext highlighter-rouge">[[0x017EED18] + 0xA90]</code>.</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">DWORD</span> <span class="n">gold_value</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">DWORD</span> <span class="n">bytes_read</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">ReadProcessMemory</span><span class="p">(</span><span class="n">wesnoth_process</span><span class="p">,</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span><span class="mh">0x017EED18</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">gold_value</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">bytes_read</span><span class="p">);</span>
+
+<span class="n">gold_value</span> <span class="o">+=</span> <span class="mh">0xA90</span><span class="p">;</span>
+<span class="n">ReadProcessMemory</span><span class="p">(</span><span class="n">wesnoth_process</span><span class="p">,</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span><span class="n">gold_value</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">gold_value</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">bytes_read</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>We can use Cheat Engine to examine offsets to ensure that we are reading
+the value correctly. We can then use a breakpoint on the second
+<strong>ReadProcessMemory</strong> call to ensure that the values match.
+Since Visual Studio displays variables in a decimal format, we will need
+to convert these numbers to hexadecimal to check.</p>
+
+<p><img src="/assets/images/3/2/ide10.png" alt="ReadProcessMemory and Cheat Engine" /></p>
+
+<p>Since our values match, we can add a final offset of 4 to the address to
+retrieve our gold address. Next, we will focus on writing memory.</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">gold_value</span> <span class="o">+=</span> <span class="mi">4</span><span class="p">;</span>
+</code></pre></div></div>
+<h1 id="writing-memory">Writing Memory</h1>
+
+<p>The API to write to another process’s memory is called <a href="https://docs.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-writeprocessmemory">WriteProcessMemory.</a> Its definition is very similar to <strong>ReadProcessMemory</strong>:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">BOOL</span> <span class="nf">WriteProcessMemory</span><span class="p">(</span>
+    <span class="n">HANDLE</span>  <span class="n">hProcess</span><span class="p">,</span>
+    <span class="n">LPVOID</span>  <span class="n">lpBaseAddress</span><span class="p">,</span>
+    <span class="n">LPCVOID</span> <span class="n">lpBuffer</span><span class="p">,</span>
+    <span class="n">SIZE_T</span>  <span class="n">nSize</span><span class="p">,</span>
+    <span class="n">SIZE_T</span>  <span class="o">*</span><span class="n">lpNumberOfBytesWritten</span>
+<span class="p">);</span>
+</code></pre></div></div>
+
+<p>The major difference is that this function writes the value of a buffer
+into a section of a memory, instead of reading a section of memory into a
+buffer. Like before, we will need to declare two variables for the buffer
+and the number of bytes written.</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">DWORD</span> <span class="n">new_gold_value</span> <span class="o">=</span> <span class="mi">555</span><span class="p">;</span>
+<span class="n">DWORD</span> <span class="n">bytes_written</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Then, we can call <strong>WriteProcessMemory</strong> in an almost
+identical manner to <strong>ReadProcessMemory</strong>. Like with
+<strong>ReadProcessMemory</strong>, we will cast our
+<strong>gold_value</strong> to <strong>(void*)</strong>:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">WriteProcessMemory</span><span class="p">(</span><span class="n">wesnoth_process</span><span class="p">,</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span><span class="n">gold_value</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">new_gold_value</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">bytes_written</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>When this is executed, our gold will be set to 555 and our hack will be
+complete. We can now run this executable whenever we want to change our
+gold. We can also distribute it to other players to execute on their
+machines.</p>
+
+<p><img src="/assets/images/3/2/ide11.png" alt="WriteProcessMemory" /></p>
+
+<p>The full code for this lesson is available on <a href="https://github.com/GameHackingAcademy/Wesnoth_ExternalGoldHack">github</a> for comparison.</p>
+
+<p> </p>
+
+
+                </section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+          <a
+            href="/pages/3/01/"
+            class="navigation navigation-prev navigation-unique"
+            aria-label="Previous page: Programming Fundamentals"
+          >
+            <i class="fa fa-angle-left"></i>
+          </a>
+           
+          <a
+            href="/pages/3/03/"
+            class="navigation navigation-next navigation-unique"
+            aria-label="Next page: DLL Memory Hack"
+          >
+            <i class="fa fa-angle-right"></i>
+          </a>
+          
+        </div>
+      </div>
+
+      <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "DLL Memory Hack",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/3/03.md",
+            "ref": "_pages/3/03.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {
+                "facebook": false,
+
+                "google": false,
+
+                "github": true,
+                "github_link": "https://github.com/GameHackingAcademy",
+
+                "telegram": false,
+                "telegram_link": "https://t.me",
+
+                "instapaper": false,
+
+                "twitter": true,
+                "twitter_link": "https://twitter.com/GameHackingAcad",
+
+                "vk": false,
+
+                "weibo": false
+            },
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            }
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Game Hacking Academy",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_pages/3/02.md",
+        "mtime": "2023-12-25 00:00:00 -0600",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2023-12-26 18:36:09 -0600"
+    },
+    "basePath": "",
+    "book": {
+        "language": ""
+    }
+});
+        });
+      </script>
+    </div><script src="/assets/gitbook/gitbook.js"></script>
+<script src="/assets/gitbook/theme.js"></script>
+
+<script src="/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+
+<!-- <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script> -->
+
+<script src="/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+
+<!-- trackers --><!-- google analytics --><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160704775-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-160704775-1');
+</script>
+<script>
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 20,
+            density: {
+              enable: true,
+              value_area: 100,
+            },
+          },
+          color: {
+            value: "#6195b9",
+          },
+          shape: {
+            type: "edge",
+          },
+          opacity: {
+            value: 0.3,
+            anim: {
+              enable: true,
+              speed: 0.1,
+              opacity_min: 0,
+              sync: false,
+            },
+          },
+          size: {
+            value: 15,
+            random: true,
+          },
+          line_linked: {
+            enable: false,
+          },
+          move: {
+            enable: true,
+            speed: 0.5,
+            direction: "top",
+            random: true,
+            straight: true,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+            },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: false,
+            },
+            onclick: {
+              enable: false,
+            },
+            resize: true,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Creating an External Client · Game Hacking Academy</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Game hacking tutorials and lessons.
+"><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="attilathedud"><link rel="stylesheet" href="/assets/gitbook/style.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+
+<link rel="stylesheet" href="/assets/gitbook/rouge/base16.css">
+
+<link rel="stylesheet" href="/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+
+<script src="/assets/particles.min.js"></script>
+
+<style>
+    @media screen and (min-width: 1101px) {
+      .eyecandy {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        min-height: 50%;
+        height: 50%;
+        width: 25%;
+        pointer-events: none;
+        z-index: 1;
+      }
+    }
+    @media screen and (max-width: 1100px) {
+      .eyecandy {
+        display: none;
+      }
+    }
+  </style>
+
+
+
+
+
+
+    <link rel="prev" href="/pages/6/03/" />
+     
+    <link rel="next" href="/pages/6/05/" />
+    
+    
+  </head>
+  <body>
+    <div id="particles-js" class="eyecandy"></div>
+
+    <div class="book color-theme-2"><div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;  // propagate
+        }
+        // Fixes the anchor links scroll problem on mobile browsers
+        function mobilePageScrollToAnchor(element) {
+            $(element).closest('li.chapter').find('ul>li').removeClass('active');
+            $(element).parent().addClass('active');
+            if ($(document).width() <= 1240) {
+                $('div.body-inner').animate({scrollTop: $($(element).attr('href')).get(0).offsetTop});
+            }
+            return true;
+        }
+    </script>
+
+    <nav role="navigation">
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/assets/search.html">Click to Search</a>
+        </div>
+        <ul class="summary">
+            
+                <!-- <p>pages</p> -->
+                
+                    
+
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/">
+                        
+                            <a href="/" onclick="pageScrollToTop(this)">
+                                About
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                            <li class="divider-header">
+                                <a>Basics</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/1/01/">
+                        
+                            <a href="/pages/1/01/" onclick="pageScrollToTop(this)">
+                                Computer Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/1/02/">
+                        
+                            <a href="/pages/1/02/" onclick="pageScrollToTop(this)">
+                                Game Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/1/03/">
+                        
+                            <a href="/pages/1/03/" onclick="pageScrollToTop(this)">
+                                Hacking Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/1/04/">
+                        
+                            <a href="/pages/1/04/" onclick="pageScrollToTop(this)">
+                                Setting Up a VM
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/1/05/">
+                        
+                            <a href="/pages/1/05/" onclick="pageScrollToTop(this)">
+                                Memory Hack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>Debugging & Reversing</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/01/">
+                        
+                            <a href="/pages/2/01/" onclick="pageScrollToTop(this)">
+                                Debugging Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/02/">
+                        
+                            <a href="/pages/2/02/" onclick="pageScrollToTop(this)">
+                                Assembly Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/03/">
+                        
+                            <a href="/pages/2/03/" onclick="pageScrollToTop(this)">
+                                Using Breakpoints
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/04/">
+                        
+                            <a href="/pages/2/04/" onclick="pageScrollToTop(this)">
+                                Changing Game Code
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/05/">
+                        
+                            <a href="/pages/2/05/" onclick="pageScrollToTop(this)">
+                                Reversing Code
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/06/">
+                        
+                            <a href="/pages/2/06/" onclick="pageScrollToTop(this)">
+                                Code Caves
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/07/">
+                        
+                            <a href="/pages/2/07/" onclick="pageScrollToTop(this)">
+                                Using Code Caves
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/08/">
+                        
+                            <a href="/pages/2/08/" onclick="pageScrollToTop(this)">
+                                Dynamic Memory Allocation
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/09/">
+                        
+                            <a href="/pages/2/09/" onclick="pageScrollToTop(this)">
+                                Defeating DMA
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>Programming</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/3/01/">
+                        
+                            <a href="/pages/3/01/" onclick="pageScrollToTop(this)">
+                                Programming Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/3/02/">
+                        
+                            <a href="/pages/3/02/" onclick="pageScrollToTop(this)">
+                                External Memory Hack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/3/03/">
+                        
+                            <a href="/pages/3/03/" onclick="pageScrollToTop(this)">
+                                DLL Memory Hack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/3/04/">
+                        
+                            <a href="/pages/3/04/" onclick="pageScrollToTop(this)">
+                                Code Caves &amp; DLL&#39;s
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/3/05/">
+                        
+                            <a href="/pages/3/05/" onclick="pageScrollToTop(this)">
+                                Printing Text
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>RTS/RPG Hacks</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/4/01/">
+                        
+                            <a href="/pages/4/01/" onclick="pageScrollToTop(this)">
+                                Stathack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/4/02/">
+                        
+                            <a href="/pages/4/02/" onclick="pageScrollToTop(this)">
+                                Map Hack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/4/03/">
+                        
+                            <a href="/pages/4/03/" onclick="pageScrollToTop(this)">
+                                Macro Bot
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/4/04/">
+                        
+                            <a href="/pages/4/04/" onclick="pageScrollToTop(this)">
+                                Farming Bot
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>FPS Hacks</a>
+                            </li>
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/01/">
+                        
+                            <a href="/pages/5/01/" onclick="pageScrollToTop(this)">
+                                3D Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/02/">
+                        
+                            <a href="/pages/5/02/" onclick="pageScrollToTop(this)">
+                                Wallhack (Memory)
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/03/">
+                        
+                            <a href="/pages/5/03/" onclick="pageScrollToTop(this)">
+                                Wallhack (OpenGL)
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/04/">
+                        
+                            <a href="/pages/5/04/" onclick="pageScrollToTop(this)">
+                                Chams (OpenGL)
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/05/">
+                        
+                            <a href="/pages/5/05/" onclick="pageScrollToTop(this)">
+                                Triggerbot
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/06/">
+                        
+                            <a href="/pages/5/06/" onclick="pageScrollToTop(this)">
+                                Aimbot
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/07/">
+                        
+                            <a href="/pages/5/07/" onclick="pageScrollToTop(this)">
+                                No Recoil
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/08/">
+                        
+                            <a href="/pages/5/08/" onclick="pageScrollToTop(this)">
+                                Radar Hack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/09/">
+                        
+                            <a href="/pages/5/09/" onclick="pageScrollToTop(this)">
+                                ESP
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/10/">
+                        
+                            <a href="/pages/5/10/" onclick="pageScrollToTop(this)">
+                                Multihack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>Multiplayer</a>
+                            </li>
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/6/01/">
+                        
+                            <a href="/pages/6/01/" onclick="pageScrollToTop(this)">
+                                Multiplayer Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/6/02/">
+                        
+                            <a href="/pages/6/02/" onclick="pageScrollToTop(this)">
+                                Packet Analysis
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/6/03/">
+                        
+                            <a href="/pages/6/03/" onclick="pageScrollToTop(this)">
+                                Reversing Packets
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter active" data-level="1.2" data-path="/pages/6/04/">
+                        
+                            <a href="/pages/6/04/" onclick="pageScrollToTop(this)">
+                                Creating an External Client
+                            </a>
+                            
+                                
+                                    <ul><li><a href="#target" onclick="mobilePageScrollToAnchor(this)" >Target</a></li><li><a href="#identify" onclick="mobilePageScrollToAnchor(this)" >Identify</a></li><li><a href="#understand" onclick="mobilePageScrollToAnchor(this)" >Understand</a></li><li><a href="#zlib-installation" onclick="mobilePageScrollToAnchor(this)" >ZLib Installation</a></li><li><a href="#sending-data" onclick="mobilePageScrollToAnchor(this)" >Sending Data</a></li><li><a href="#retrieving-data" onclick="mobilePageScrollToAnchor(this)" >Retrieving Data</a></li></ul>
+
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/6/05/">
+                        
+                            <a href="/pages/6/05/" onclick="pageScrollToTop(this)">
+                                Proxying TCP Traffic
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>Tool Development</a>
+                            </li>
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/7/01/">
+                        
+                            <a href="/pages/7/01/" onclick="pageScrollToTop(this)">
+                                DLL Injector
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/7/02/">
+                        
+                            <a href="/pages/7/02/" onclick="pageScrollToTop(this)">
+                                Pattern Scanner
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/7/03/">
+                        
+                            <a href="/pages/7/03/" onclick="pageScrollToTop(this)">
+                                Memory Scanner
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/7/04/">
+                        
+                            <a href="/pages/7/04/" onclick="pageScrollToTop(this)">
+                                Disassembler
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/7/05/">
+                        
+                            <a href="/pages/7/05/" onclick="pageScrollToTop(this)">
+                                Debugger
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/7/06/">
+                        
+                            <a href="/pages/7/06/" onclick="pageScrollToTop(this)">
+                                Call Logger
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>Game Resources</a>
+                            </li>
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/8/01/">
+                        
+                            <a href="/pages/8/01/" onclick="pageScrollToTop(this)">
+                                Resource Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/8/02/">
+                        
+                            <a href="/pages/8/02/" onclick="pageScrollToTop(this)">
+                                Modifying Save Data
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/8/03/">
+                        
+                            <a href="/pages/8/03/" onclick="pageScrollToTop(this)">
+                                Modifying Textures
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/8/04/">
+                        
+                            <a href="/pages/8/04/" onclick="pageScrollToTop(this)">
+                                Modifying Units
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                
+            
+                <!-- <p>posts</p> -->
+                
+                    
+
+                    
+                
+            
+        </ul>
+
+        &nbsp;
+    </nav>
+</div>
+<div class="book-body">
+        <div class="book-header" role="navigation">
+          <!-- Title -->
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i>
+            
+            <a href=".">Creating an External Client</a>
+            
+          </h1>
+        </div>
+
+        <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+
+                    <h1 id="target">Target</h1>
+
+<p>Our target in this lesson will be Wesnoth 1.14.9.</p>
+
+<h1 id="identify">Identify</h1>
+
+<p>In the previous lesson, we reversed the structure of a Wesnoth chat packet
+and identified the steps needed to reverse and create chat packets for the
+game. In this lesson, we will expand on this work to create a chat bot, a
+type of bot that will wait for and respond to certain commands.</p>
+
+<video controls="" autoplay="" loop="">
+  <source src="/assets/images/6/4/chat.mp4" />
+</video>
+
+<h1 id="understand">Understand</h1>
+
+<p>In the previous lesson, we determined that the process to reverse a packet
+went like this:</p>
+
+<ol>
+  <li>Retrieve the packet’s data.</li>
+  <li>Split the data into two sections: size and compressed content.</li>
+  <li>Decompress the second section.</li>
+</ol>
+
+<p>We used that technique on a chat packet and retrieved structured data that
+looked like:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="n">message</span><span class="p">]</span>
+  <span class="n">message</span><span class="o">=</span><span class="s">"a"</span>
+  <span class="n">room</span><span class="o">=</span><span class="s">"lobby"</span>
+  <span class="n">sender</span><span class="o">=</span><span class="s">"FFFAAAKKKEEE"</span>
+<span class="p">[</span><span class="o">/</span><span class="n">message</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>Once we retrieved this data, we could make modifications and use a similar
+process to create a new packet:</p>
+
+<ol>
+  <li>Compress the data section.</li>
+  <li>Add the section’s length to the front of the data section.</li>
+  <li>Send the packet with the new data.</li>
+</ol>
+
+<p>Since we can write both of the above processes out as a series of concrete
+steps, we can create a program to automatically perform them for us. In
+the retrieval process, we can analyze the content of each retrieved packet
+and look for certain characters. If we identify these characters, we can
+act on them.</p>
+
+<h1 id="zlib-installation">ZLib Installation</h1>
+
+<p>The data in the packets was compressed using gzip. While we could write
+our own functions to manage gzip’d data, there are external libraries that
+already provide functionality to compress and decompress gzip’d data in
+C++. External libraries generally contain two parts: header files to
+include in your code, and library files that contain the actual code. For
+this lesson, we will use a library called <a href="https://zlib.net/">ZLib.</a> Most of these libraries require
+additional installation steps to fully work, including ZLib.</p>
+
+<p>To set up ZLib, first download the <em>Complete package</em> installer from <a href="http://gnuwin32.sourceforge.net/packages/zlib.htm">their site</a> under the <em>zlib for Windows 9x/NT</em> entry. Once installed, it should
+create a directory at <em>C:\Program Files (x86)\GnuWin32</em>.</p>
+
+<p>This installation placed several header and library files in this
+directory. To use these, we need to include them in our Visual Studio
+project. Open up Visual Studio and create a project. Once created,
+right-click on the project file and choose <em>Properties</em>:</p>
+
+<p><img src="/assets/images/6/4/chat1.png" alt="Visual Studio Project Files" /></p>
+
+<p>First, we will make sure that our project can find the ZLib include files.
+In the properties dialog, choose <em>C/C++</em> -&gt;
+<em>Additional Include Directories</em> -&gt; <em>Edit</em>:</p>
+
+<p><img src="/assets/images/6/4/chat2.png" alt="Visual Studio Project Files" /></p>
+
+<p>In the dialog box that appears, choose the <em>New folder</em> icon and
+browse to <em>C:\Program Files (x86)\GnuWin32\include</em>:</p>
+
+<p><img src="/assets/images/6/4/chat3.png" alt="Visual Studio Project Files" /></p>
+
+<p>We can now include <em>zlib.h</em> inside our code, and the build process
+will be able to locate the file. However, as we have seen in previous
+labs, header files generally only contain function definitions and do not
+contain the majority of code. In ZLib, this code is stored in library
+files. We will include these library files in a similar manner.</p>
+
+<p>Select <em>Linker</em> -&gt; <em>General</em> and then select
+<em>Additional Library Directories</em> -&gt; <em>Edit</em>:</p>
+
+<p><img src="/assets/images/6/4/chat4.png" alt="Visual Studio Project Files" /></p>
+
+<p>Like we just did, choose the <em>New folder</em> icon. This time, supply the
+path to the library folder at <em>C:\Program Files (x86)\GnuWin32\lib</em>:</p>
+
+<p><img src="/assets/images/6/4/chat5.png" alt="Visual Studio Project Files" /></p>
+
+<p>Now that we have loaded the library folder, we need to include the actual
+.lib file. In <em>Linker</em> -&gt; <em>Input</em>, select
+<em>Additional Dependencies</em> and add <em>zlib.lib</em> in the dialog that
+appears:</p>
+
+<p><img src="/assets/images/6/4/chat6.png" alt="Visual Studio Project Files" /></p>
+
+<p>With all this setup done, we can now include ZLib in our code like a
+regular header:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;zlib.h&gt;</span><span class="cp">
+</span></code></pre></div></div>
+
+<p>However, if we try to build this code, we will get the following build
+error:</p>
+
+<p><img src="/assets/images/6/4/chat7.png" alt="Visual Studio Project Files" /></p>
+
+<p>If we double-click on this error, we are directed to the following code
+block:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#if 1           </span><span class="cm">/* HAVE_UNISTD_H -- this line is updated by ./configure */</span><span class="cp">
+#  include &lt;sys/types.h&gt; </span><span class="cm">/* for off_t */</span><span class="cp">
+#  include &lt;unistd.h&gt;    </span><span class="cm">/* for SEEK_* and off_t */</span><span class="cp">
+#  ifdef VMS
+</span></code></pre></div></div>
+
+<p>unistd.h is a Unix specific file. To fix this error, we can change the
+<strong>#if 1</strong> to <strong>#if HAVE_UNISTD_H</strong>, like so:</p>
+
+<p><img src="/assets/images/6/4/chat8.png" alt="Visual Studio Project Files" /></p>
+
+<p>With these changes, our program will now build. However, if you run the
+program, you will encounter a missing DLL error. To fix this, copy over
+the <em>zlib1.dll</em> file to the running directory of your application:</p>
+
+<p><img src="/assets/images/6/4/chat9.png" alt="Visual Studio Project Files" /></p>
+
+<p>We can now build and run programs that contain ZLib functionality.</p>
+
+<h1 id="sending-data">Sending Data</h1>
+
+<p>Now that we can compress data in our code, we can create a function to
+send a Wesnoth-structured packet with whatever data we would like. To
+create the packet, this function will need our data and the length of this
+data. To send the packet, we will need a socket. With these requirements,
+we can create our function definition:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">send_data</span><span class="p">(</span><span class="k">const</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="o">*</span><span class="n">data</span><span class="p">,</span> <span class="kt">size_t</span> <span class="n">len</span><span class="p">,</span> <span class="n">SOCKET</span> <span class="n">s</span><span class="p">)</span> <span class="p">{</span>
+</code></pre></div></div>
+
+<p>Based on the <a href="https://refspecs.linuxbase.org/LSB_3.0.0/LSB-Core-generic/LSB-Core-generic/libzman.html">documentation,</a> the easiest way to use ZLib to produce gzip’d data is to create a file
+with the compressed data. We can do this using the
+<strong>gzopen</strong>, <strong>gzwrite</strong>, and
+<strong>gzclose</strong> functions. These are similar to the regular file
+functions <strong>fopen</strong>, <strong>fwrite</strong>, and
+<strong>fclose</strong>. In our case, we will create a single compressed
+file, <strong>packet.gz</strong>, and write whatever data is passed into
+this file:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">gzFile</span> <span class="n">temp_data</span> <span class="o">=</span> <span class="n">gzopen</span><span class="p">(</span><span class="s">"packet.gz"</span><span class="p">,</span> <span class="s">"wb"</span><span class="p">);</span>
+<span class="n">gzwrite</span><span class="p">(</span><span class="n">temp_data</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">len</span><span class="p">);</span>
+<span class="n">gzclose</span><span class="p">(</span><span class="n">temp_data</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>We can test our current implementation via:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">const</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">version</span><span class="p">[]</span> <span class="o">=</span> <span class="s">"[test]hello[/test]"</span><span class="p">;</span>
+<span class="n">send_data</span><span class="p">(</span><span class="n">version</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">version</span><span class="p">),</span> <span class="n">ConnectSocket</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Running this code will produce a packet.gz file in the same directory that
+you ran the program from. If you use gzip to decompress the packet.gz
+file, you will find that it contains <strong>[test]hello[/test]</strong>,
+showing that our code works so far.</p>
+
+<p>Our packet needs to contain the byte representation of this file. To
+retrieve this, we can read the file as a binary file:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#define DEFAULT_BUFLEN 512
+</span><span class="p">...</span>
+<span class="kt">FILE</span><span class="o">*</span> <span class="n">temp_file</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+<span class="n">fopen_s</span><span class="p">(</span><span class="o">&amp;</span><span class="n">temp_file</span><span class="p">,</span> <span class="s">"packet.gz"</span><span class="p">,</span> <span class="s">"rb"</span><span class="p">);</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">temp_file</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">size_t</span> <span class="n">compress_len</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">buffer</span><span class="p">[</span><span class="n">DEFAULT_BUFLEN</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">0</span> <span class="p">};</span>
+  <span class="n">compress_len</span> <span class="o">=</span> <span class="n">fread</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buffer</span><span class="p">),</span> <span class="n">temp_file</span><span class="p">);</span>
+  <span class="n">fclose</span><span class="p">(</span><span class="n">temp_file</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>If you run this code and set a breakpoint after <strong>fclose</strong>,
+you will see that the buffer now contains the byte representation of the
+compressed file. We can use this to build our packet. We know that the
+first 4 bytes (a <strong>DWORD</strong>) of the packet represent the
+packet’s size. Since all of the chat packets are small, we only need to
+write the size to the last byte of this <strong>DWORD</strong>. Since
+buffers start at 0 in C, we reference this position with
+<strong>+3</strong>. We will write the buffer containing the compressed
+data after that:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">buff_packet</span><span class="p">[</span><span class="n">DEFAULT_BUFLEN</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">0</span> <span class="p">};</span>
+<span class="n">memcpy</span><span class="p">(</span><span class="n">buff_packet</span> <span class="o">+</span> <span class="mi">3</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">compress_len</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">compress_len</span><span class="p">));</span>
+<span class="n">memcpy</span><span class="p">(</span><span class="n">buff_packet</span> <span class="o">+</span> <span class="mi">4</span><span class="p">,</span> <span class="n">buffer</span><span class="p">,</span> <span class="n">compress_len</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Next, we will use the code we have seen before to send a packet containing
+this data:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">iResult</span> <span class="o">=</span> <span class="n">send</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">buff_packet</span><span class="p">,</span> <span class="n">compress_len</span> <span class="o">+</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">"Bytes Sent: %ld</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">iResult</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>To verify that this method works, we will build off the code we wrote in
+the previous lesson. In this code, we sent three packets to connect to the
+server: an initial negotiation packet that contained 0’s, a packet
+containing our client’s version, and a packet containing our username.</p>
+
+<p>We can use the same technique that we used to decode chat messages to
+decode these packets. For example, the packet containing our version looks
+like this after decoding:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="n">version</span><span class="p">]</span>
+  <span class="n">version</span><span class="o">=</span><span class="s">"1.14.9"</span>
+<span class="p">[</span><span class="o">/</span><span class="n">version</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>Instead of sending the packet’s bytes like we were doing, we can use our
+new function:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">const</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">version</span><span class="p">[]</span> <span class="o">=</span> <span class="s">"[version]</span><span class="se">\n</span><span class="s">version=</span><span class="se">\"</span><span class="s">1.14.9</span><span class="se">\"\n</span><span class="s">[/version]"</span><span class="p">;</span>
+<span class="n">send_data</span><span class="p">(</span><span class="n">version</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">version</span><span class="p">),</span> <span class="n">ConnectSocket</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>If you build and run this code, you will see that our bot will connect in
+the same way, verifying that our function works. We can build on this
+approach to send a custom username:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">const</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">name</span><span class="p">[]</span> <span class="o">=</span> <span class="s">"[login]</span><span class="se">\n</span><span class="s">username=</span><span class="se">\"</span><span class="s">ChatBot</span><span class="se">\"\n</span><span class="s">[/login]"</span><span class="p">;</span>
+<span class="n">send_data</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">name</span><span class="p">),</span> <span class="n">ConnectSocket</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Finally, we can use the same method to send an initial chat message when
+we connect:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">const</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">first_message</span><span class="p">[]</span> <span class="o">=</span> <span class="s">"[message]</span><span class="se">\n</span><span class="s">message=</span><span class="se">\"</span><span class="s">ChatBot connected</span><span class="se">\"\n</span><span class="s">room=</span><span class="se">\"</span><span class="s">lobby</span><span class="se">\"\n</span><span class="s">sender=</span><span class="se">\"</span><span class="s">ChatBot</span><span class="se">\"\n</span><span class="s">[/message]"</span><span class="p">;</span>
+<span class="n">send_data</span><span class="p">(</span><span class="n">first_message</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">first_message</span><span class="p">),</span> <span class="n">ConnectSocket</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>This is the same chat message structure that we observed in the previous
+lab.</p>
+
+<h1 id="retrieving-data">Retrieving Data</h1>
+
+<p>We can now send chat messages. For our chatbot to work, we also need to
+retrieve messages from the server and parse them for certain text. For
+this lesson, we will have our bot respond to any message that contains
+<strong>\wave</strong> with a chat message that says
+<strong>hello</strong> back.</p>
+
+<p>At the bottom of the code from Microsoft is a loop that continuously
+checks for new packets. We can modify this to send retrieved packets to
+our own function, and, depending on the contents, send a chat message:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">do</span> <span class="p">{</span>
+  <span class="n">iResult</span> <span class="o">=</span> <span class="n">recv</span><span class="p">(</span><span class="n">ConnectSocket</span><span class="p">,</span> <span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">recvbuf</span><span class="p">,</span> <span class="n">recvbuflen</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">iResult</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"Bytes received: %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">iResult</span><span class="p">);</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">iResult</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"Connection closed</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+  <span class="k">else</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"recv failed with error: %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">WSAGetLastError</span><span class="p">());</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="n">parse_data</span><span class="p">(</span><span class="n">recvbuf</span><span class="p">,</span> <span class="n">iResult</span><span class="p">))</span> <span class="p">{</span>
+    <span class="k">const</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">message</span><span class="p">[]</span> <span class="o">=</span> <span class="s">"[message]</span><span class="se">\n</span><span class="s">message=</span><span class="se">\"</span><span class="s">Hello!</span><span class="se">\"\n</span><span class="s">room=</span><span class="se">\"</span><span class="s">lobby</span><span class="se">\"\n</span><span class="s">sender=</span><span class="se">\"</span><span class="s">ChatBot</span><span class="se">\"\n</span><span class="s">[/message]"</span><span class="p">;</span>
+    <span class="n">send_data</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">message</span><span class="p">),</span> <span class="n">ConnectSocket</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">iResult</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Our <strong>parse_data</strong> function will take a data buffer and its
+length, and return true if <strong>\wave</strong> is found.</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">bool</span> <span class="nf">parse_data</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">char</span> <span class="o">*</span><span class="n">buff</span><span class="p">,</span> <span class="kt">int</span> <span class="n">buff_len</span><span class="p">)</span> <span class="p">{</span>
+</code></pre></div></div>
+
+<p>Like we described above, this function will do the same steps as the
+<strong>send_data</strong> function, but in the opposite order. First, we
+will extract the compressed data from the packet and write it to a file:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">data</span><span class="p">[</span><span class="n">DEFAULT_BUFLEN</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">0</span> <span class="p">};</span>
+<span class="n">memcpy</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">buff</span> <span class="o">+</span> <span class="mi">4</span><span class="p">,</span> <span class="n">buff_len</span> <span class="o">-</span> <span class="mi">4</span><span class="p">);</span>
+
+<span class="kt">FILE</span><span class="o">*</span> <span class="n">temp_file</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+<span class="n">fopen_s</span><span class="p">(</span><span class="o">&amp;</span><span class="n">temp_file</span><span class="p">,</span> <span class="s">"packet_recv.gz"</span><span class="p">,</span> <span class="s">"wb"</span><span class="p">);</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">temp_file</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">fwrite</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="n">temp_file</span><span class="p">);</span>
+  <span class="n">fclose</span><span class="p">(</span><span class="n">temp_file</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>With the compressed data saved, we can use the <strong>gzopen</strong> and
+<strong>gzread</strong> to read the decompressed data into a variable. We
+will then write this variable to the terminal using
+<strong>fwrite</strong>:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">gzFile</span> <span class="n">temp_data_in</span> <span class="o">=</span> <span class="n">gzopen</span><span class="p">(</span><span class="s">"packet_recv.gz"</span><span class="p">,</span> <span class="s">"rb"</span><span class="p">);</span>
+<span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">decompressed_data</span><span class="p">[</span><span class="n">DEFAULT_BUFLEN</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">0</span> <span class="p">};</span>
+<span class="n">gzread</span><span class="p">(</span><span class="n">temp_data_in</span><span class="p">,</span> <span class="n">decompressed_data</span><span class="p">,</span> <span class="n">DEFAULT_BUFLEN</span><span class="p">);</span>
+<span class="n">fwrite</span><span class="p">(</span><span class="n">decompressed_data</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">DEFAULT_BUFLEN</span><span class="p">,</span> <span class="n">stdout</span><span class="p">);</span>
+<span class="n">gzclose</span><span class="p">(</span><span class="n">temp_data_in</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Finally, we will check if the data contains the text
+<strong>\wave</strong> using <strong>strstr</strong>. This function
+returns a positive value if the second parameter is included in the first
+parameter. It returns 0 if not. Because of this, we can return the value
+of the search and use that to signify to our calling code that the text
+was found:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">return</span> <span class="nf">strstr</span><span class="p">((</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">decompressed_data</span><span class="p">,</span> <span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="s">"</span><span class="se">\\</span><span class="s">wave"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>The full source code for this lesson is available on <a href="https://github.com/GameHackingAcademy/Wesnoth_ChatBot">github</a> for comparison.</p>
+
+<p> </p>
+
+
+                </section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+          <a
+            href="/pages/6/03/"
+            class="navigation navigation-prev navigation-unique"
+            aria-label="Previous page: Reversing Packets"
+          >
+            <i class="fa fa-angle-left"></i>
+          </a>
+           
+          <a
+            href="/pages/6/05/"
+            class="navigation navigation-next navigation-unique"
+            aria-label="Next page: Proxying TCP Traffic"
+          >
+            <i class="fa fa-angle-right"></i>
+          </a>
+          
+        </div>
+      </div>
+
+      <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "Proxying TCP Traffic",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/6/05.md",
+            "ref": "_pages/6/05.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {
+                "facebook": false,
+
+                "google": false,
+
+                "github": true,
+                "github_link": "https://github.com/GameHackingAcademy",
+
+                "telegram": false,
+                "telegram_link": "https://t.me",
+
+                "instapaper": false,
+
+                "twitter": true,
+                "twitter_link": "https://twitter.com/GameHackingAcad",
+
+                "vk": false,
+
+                "weibo": false
+            },
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            }
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Game Hacking Academy",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_pages/6/04.md",
+        "mtime": "2023-12-25 00:00:00 -0600",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2023-12-26 18:36:09 -0600"
+    },
+    "basePath": "",
+    "book": {
+        "language": ""
+    }
+});
+        });
+      </script>
+    </div><script src="/assets/gitbook/gitbook.js"></script>
+<script src="/assets/gitbook/theme.js"></script>
+
+<script src="/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+
+<!-- <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script> -->
+
+<script src="/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+
+<!-- trackers --><!-- google analytics --><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160704775-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-160704775-1');
+</script>
+<script>
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 20,
+            density: {
+              enable: true,
+              value_area: 100,
+            },
+          },
+          color: {
+            value: "#6195b9",
+          },
+          shape: {
+            type: "edge",
+          },
+          opacity: {
+            value: 0.3,
+            anim: {
+              enable: true,
+              speed: 0.1,
+              opacity_min: 0,
+              sync: false,
+            },
+          },
+          size: {
+            value: 15,
+            random: true,
+          },
+          line_linked: {
+            enable: false,
+          },
+          move: {
+            enable: true,
+            speed: 0.5,
+            direction: "top",
+            random: true,
+            straight: true,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+            },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: false,
+            },
+            onclick: {
+              enable: false,
+            },
+            resize: true,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

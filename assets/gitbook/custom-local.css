@@ -1,0 +1,19 @@
+/* This file is kept intentionally blank inside the jekyll-github-theme
+ * It gets imported at the end of custom.css
+ * Its purpose is for users of the theme to be able to add css rules from a blank file
+ *   these get simply added to the ones already active in the layout.
+ */
+
+body {
+     line-height: 1.5;
+ }
+
+ .markdown-section img {
+    margin: 1em auto;
+    display: block;
+    max-width: 100%;
+ }
+
+ video {
+    max-width: 100%;
+ }

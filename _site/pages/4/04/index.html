@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>Farming Bot · Game Hacking Academy</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Game hacking tutorials and lessons.
+"><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="attilathedud"><link rel="stylesheet" href="/assets/gitbook/style.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+
+<link rel="stylesheet" href="/assets/gitbook/rouge/base16.css">
+
+<link rel="stylesheet" href="/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+
+<script src="/assets/particles.min.js"></script>
+
+<style>
+    @media screen and (min-width: 1101px) {
+      .eyecandy {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        min-height: 50%;
+        height: 50%;
+        width: 25%;
+        pointer-events: none;
+        z-index: 1;
+      }
+    }
+    @media screen and (max-width: 1100px) {
+      .eyecandy {
+        display: none;
+      }
+    }
+  </style>
+
+
+
+
+
+
+    <link rel="prev" href="/pages/4/03/" />
+     
+    <link rel="next" href="/pages/5/01/" />
+    
+    
+  </head>
+  <body>
+    <div id="particles-js" class="eyecandy"></div>
+
+    <div class="book color-theme-2"><div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;  // propagate
+        }
+        // Fixes the anchor links scroll problem on mobile browsers
+        function mobilePageScrollToAnchor(element) {
+            $(element).closest('li.chapter').find('ul>li').removeClass('active');
+            $(element).parent().addClass('active');
+            if ($(document).width() <= 1240) {
+                $('div.body-inner').animate({scrollTop: $($(element).attr('href')).get(0).offsetTop});
+            }
+            return true;
+        }
+    </script>
+
+    <nav role="navigation">
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/assets/search.html">Click to Search</a>
+        </div>
+        <ul class="summary">
+            
+                <!-- <p>pages</p> -->
+                
+                    
+
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/">
+                        
+                            <a href="/" onclick="pageScrollToTop(this)">
+                                About
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                            <li class="divider-header">
+                                <a>Basics</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/1/01/">
+                        
+                            <a href="/pages/1/01/" onclick="pageScrollToTop(this)">
+                                Computer Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/1/02/">
+                        
+                            <a href="/pages/1/02/" onclick="pageScrollToTop(this)">
+                                Game Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/1/03/">
+                        
+                            <a href="/pages/1/03/" onclick="pageScrollToTop(this)">
+                                Hacking Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/1/04/">
+                        
+                            <a href="/pages/1/04/" onclick="pageScrollToTop(this)">
+                                Setting Up a VM
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/1/05/">
+                        
+                            <a href="/pages/1/05/" onclick="pageScrollToTop(this)">
+                                Memory Hack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>Debugging & Reversing</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/01/">
+                        
+                            <a href="/pages/2/01/" onclick="pageScrollToTop(this)">
+                                Debugging Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/02/">
+                        
+                            <a href="/pages/2/02/" onclick="pageScrollToTop(this)">
+                                Assembly Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/03/">
+                        
+                            <a href="/pages/2/03/" onclick="pageScrollToTop(this)">
+                                Using Breakpoints
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/04/">
+                        
+                            <a href="/pages/2/04/" onclick="pageScrollToTop(this)">
+                                Changing Game Code
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/05/">
+                        
+                            <a href="/pages/2/05/" onclick="pageScrollToTop(this)">
+                                Reversing Code
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/06/">
+                        
+                            <a href="/pages/2/06/" onclick="pageScrollToTop(this)">
+                                Code Caves
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/07/">
+                        
+                            <a href="/pages/2/07/" onclick="pageScrollToTop(this)">
+                                Using Code Caves
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/08/">
+                        
+                            <a href="/pages/2/08/" onclick="pageScrollToTop(this)">
+                                Dynamic Memory Allocation
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/2/09/">
+                        
+                            <a href="/pages/2/09/" onclick="pageScrollToTop(this)">
+                                Defeating DMA
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>Programming</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/3/01/">
+                        
+                            <a href="/pages/3/01/" onclick="pageScrollToTop(this)">
+                                Programming Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/3/02/">
+                        
+                            <a href="/pages/3/02/" onclick="pageScrollToTop(this)">
+                                External Memory Hack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/3/03/">
+                        
+                            <a href="/pages/3/03/" onclick="pageScrollToTop(this)">
+                                DLL Memory Hack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/3/04/">
+                        
+                            <a href="/pages/3/04/" onclick="pageScrollToTop(this)">
+                                Code Caves &amp; DLL&#39;s
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/3/05/">
+                        
+                            <a href="/pages/3/05/" onclick="pageScrollToTop(this)">
+                                Printing Text
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>RTS/RPG Hacks</a>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/4/01/">
+                        
+                            <a href="/pages/4/01/" onclick="pageScrollToTop(this)">
+                                Stathack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/4/02/">
+                        
+                            <a href="/pages/4/02/" onclick="pageScrollToTop(this)">
+                                Map Hack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/4/03/">
+                        
+                            <a href="/pages/4/03/" onclick="pageScrollToTop(this)">
+                                Macro Bot
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter active" data-level="1.2" data-path="/pages/4/04/">
+                        
+                            <a href="/pages/4/04/" onclick="pageScrollToTop(this)">
+                                Farming Bot
+                            </a>
+                            
+                                
+                                    <ul><li><a href="#target" onclick="mobilePageScrollToAnchor(this)" >Target</a></li><li><a href="#identify" onclick="mobilePageScrollToAnchor(this)" >Identify</a></li><li><a href="#understand" onclick="mobilePageScrollToAnchor(this)" >Understand</a></li><li><a href="#locating-player-position" onclick="mobilePageScrollToAnchor(this)" >Locating Player Position</a></li><li><a href="#flare-coordinates" onclick="mobilePageScrollToAnchor(this)" >Flare Coordinates</a></li><li><a href="#locating-enemy-position" onclick="mobilePageScrollToAnchor(this)" >Locating Enemy Position</a></li><li><a href="#locating-mouse-position" onclick="mobilePageScrollToAnchor(this)" >Locating Mouse Position</a></li><li><a href="#hooking-and-dynamic-code" onclick="mobilePageScrollToAnchor(this)" >Hooking and Dynamic Code</a></li><li><a href="#mouse-code-cave" onclick="mobilePageScrollToAnchor(this)" >Mouse Code Cave</a></li><li><a href="#player-code-cave" onclick="mobilePageScrollToAnchor(this)" >Player Code Cave</a></li><li><a href="#loop-code-cave" onclick="mobilePageScrollToAnchor(this)" >Loop Code Cave</a></li><li><a href="#bot-thread" onclick="mobilePageScrollToAnchor(this)" >Bot Thread</a></li></ul>
+
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>FPS Hacks</a>
+                            </li>
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/01/">
+                        
+                            <a href="/pages/5/01/" onclick="pageScrollToTop(this)">
+                                3D Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/02/">
+                        
+                            <a href="/pages/5/02/" onclick="pageScrollToTop(this)">
+                                Wallhack (Memory)
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/03/">
+                        
+                            <a href="/pages/5/03/" onclick="pageScrollToTop(this)">
+                                Wallhack (OpenGL)
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/04/">
+                        
+                            <a href="/pages/5/04/" onclick="pageScrollToTop(this)">
+                                Chams (OpenGL)
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/05/">
+                        
+                            <a href="/pages/5/05/" onclick="pageScrollToTop(this)">
+                                Triggerbot
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/06/">
+                        
+                            <a href="/pages/5/06/" onclick="pageScrollToTop(this)">
+                                Aimbot
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/07/">
+                        
+                            <a href="/pages/5/07/" onclick="pageScrollToTop(this)">
+                                No Recoil
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/08/">
+                        
+                            <a href="/pages/5/08/" onclick="pageScrollToTop(this)">
+                                Radar Hack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/09/">
+                        
+                            <a href="/pages/5/09/" onclick="pageScrollToTop(this)">
+                                ESP
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/5/10/">
+                        
+                            <a href="/pages/5/10/" onclick="pageScrollToTop(this)">
+                                Multihack
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>Multiplayer</a>
+                            </li>
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/6/01/">
+                        
+                            <a href="/pages/6/01/" onclick="pageScrollToTop(this)">
+                                Multiplayer Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/6/02/">
+                        
+                            <a href="/pages/6/02/" onclick="pageScrollToTop(this)">
+                                Packet Analysis
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/6/03/">
+                        
+                            <a href="/pages/6/03/" onclick="pageScrollToTop(this)">
+                                Reversing Packets
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/6/04/">
+                        
+                            <a href="/pages/6/04/" onclick="pageScrollToTop(this)">
+                                Creating an External Client
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/6/05/">
+                        
+                            <a href="/pages/6/05/" onclick="pageScrollToTop(this)">
+                                Proxying TCP Traffic
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>Tool Development</a>
+                            </li>
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/7/01/">
+                        
+                            <a href="/pages/7/01/" onclick="pageScrollToTop(this)">
+                                DLL Injector
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/7/02/">
+                        
+                            <a href="/pages/7/02/" onclick="pageScrollToTop(this)">
+                                Pattern Scanner
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/7/03/">
+                        
+                            <a href="/pages/7/03/" onclick="pageScrollToTop(this)">
+                                Memory Scanner
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/7/04/">
+                        
+                            <a href="/pages/7/04/" onclick="pageScrollToTop(this)">
+                                Disassembler
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/7/05/">
+                        
+                            <a href="/pages/7/05/" onclick="pageScrollToTop(this)">
+                                Debugger
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/7/06/">
+                        
+                            <a href="/pages/7/06/" onclick="pageScrollToTop(this)">
+                                Call Logger
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            <li class="divider-header">
+                                <a>Game Resources</a>
+                            </li>
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/8/01/">
+                        
+                            <a href="/pages/8/01/" onclick="pageScrollToTop(this)">
+                                Resource Fundamentals
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/8/02/">
+                        
+                            <a href="/pages/8/02/" onclick="pageScrollToTop(this)">
+                                Modifying Save Data
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/8/03/">
+                        
+                            <a href="/pages/8/03/" onclick="pageScrollToTop(this)">
+                                Modifying Textures
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/pages/8/04/">
+                        
+                            <a href="/pages/8/04/" onclick="pageScrollToTop(this)">
+                                Modifying Units
+                            </a>
+                            
+                                
+                            
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                
+            
+                <!-- <p>posts</p> -->
+                
+                    
+
+                    
+                
+            
+        </ul>
+
+        &nbsp;
+    </nav>
+</div>
+<div class="book-body">
+        <div class="book-header" role="navigation">
+          <!-- Title -->
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i>
+            
+            <a href=".">Farming Bot</a>
+            
+          </h1>
+        </div>
+
+        <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+
+                    <h1 id="target">Target</h1>
+
+<p>Our target in this lesson will be <a href="https://flarerpg.org/">Flare 1.12,</a> an ARPG that shares many
+characteristics with games like Diablo. Like our other targets so far,
+this game is free, open source, and not protected by any anti-cheat.</p>
+
+<h1 id="identify">Identify</h1>
+
+<p>To acquire gold and experience in Flare and other APRGs, players need to
+repeatedly kill enemies. Our goal in this lesson is to write a bot that will
+automatically locate enemies on the screen and send our player to attack
+them. While we will only kill enemies in this lesson, this same approach can
+be expanded on to gather any dropped items.</p>
+
+<video controls="" autoplay="" loop="">
+  <source src="/assets/images/4/4/flare.mp4" />
+</video>
+
+<h1 id="understand">Understand</h1>
+
+<p>To write a farming bot, we first need to locate three items in memory:</p>
+
+<ol>
+  <li>Our player’s position</li>
+  <li>An enemy’s position</li>
+  <li>Our mouse or cursor position</li>
+</ol>
+
+<p>Once we have located these items, we can determine the direction from our
+player to the enemy. In games like Flare and Diablo, you move by clicking
+on a spot. Therefore, we can set our cursor position to the direction
+facing the enemy and send a click event. We will place this logic in some
+sort of loop to continually adjust direction as the enemy and player move.</p>
+
+<h1 id="locating-player-position">Locating Player Position</h1>
+
+<p>We will begin by finding our player’s X and Y position. First, start Flare
+and create a new character. The first area in the game has no enemies and
+is perfect for finding our position. While we do not know the exact value
+of the player’s position, we can assume that the position is most likely
+stored as a float value. As such, we will scan for an
+<em>Unknown value</em> type with the <em>Value Type</em> set to <em>Float</em>.</p>
+
+<p>After the first scan, move your character down on the map and change the
+scan type to <em>Increased value</em> and filter the results. Then, move
+your character up on the map and change the scan type to
+<em>Decreased value</em>. Repeat this process until you have approximately
+150 results left.</p>
+
+<p>At this point, all of our results will contain the same value and we will
+be unable to filter our result set further. However, we know that only one
+of these addresses must store the true value of the player’s position. We
+will have to identify this address manually. To quickly do this, bring all
+the results down to the bottom pane. Then, select roughly half of the
+addresses and set their value to another value:</p>
+
+<p><img src="/assets/images/4/4/flare1.png" alt="Searching for player position" /></p>
+
+<p>If your character in game suddenly teleports to a different position, you
+know that the true address is somewhere in the selected addresses. If not,
+you know that none of these addresses hold the player’s position and can
+be deleted. Using this process, you can quickly trim down the list of
+addresses and find the one responsible for the player’s position. In this
+lab, the address identified was <code class="language-plaintext highlighter-rouge">0x0AE6931C</code>. Due to <a href="/pages/2/07/">DMA</a>, your address will most likely be different.</p>
+
+<p>With the address identified, we can use Cheat Engine’s
+<em>Find out what writes to this address</em> option, which will attach a
+debugger to the process to determine what code is altering the memory:</p>
+
+<p><img src="/assets/images/4/4/flare2.png" alt="Searching for player position" /></p>
+
+<p>With this set, go back into Flare and move your character around the
+screen. You should see that a single location is writing to the address.
+Like in the <a href="/pages/4/03/">Macro Bot</a> lesson, your address will
+most likely be different due to code being dynamically loaded in this
+game.</p>
+
+<p><img src="/assets/images/4/4/flare3.png" alt="Searching for player position" /></p>
+
+<p>Close Cheat Engine and start x64dbg. After attaching it to Flare, view the
+code at the location you identified in Cheat Engine.</p>
+
+<p><img src="/assets/images/4/4/flare4.png" alt="Searching for player position" /></p>
+
+<p>When assembled, floating point numbers are treated uniquely and have
+several instructions associated with them. For this lesson, we will only need
+to understand the <strong>fstp</strong> instruction. This instruction
+operates like a <strong>mov</strong> instruction and copies the value in
+<strong>st0</strong> to the other address specified (like
+<strong>dword ptr ds:[ebx]</strong>). <strong>st0</strong> is a special
+float-point register. We will examine floating point operations more in
+the <a href="/pages/5/07/">No Recoil</a> lesson.</p>
+
+<p>From the highlighted code above, we can see that floating point values are
+placed in <strong>ebp</strong> and <strong>ebx</strong>. If we set a
+breakpoint on the
+<strong>fstp dword ptr ss:[ebp],st(0)</strong> instruction and then move
+our character, our breakpoint will pop. After popping, right-click on
+<strong>ebx</strong> and choose <em>Follow in dump</em>. You will see values
+similar to the following in the <em>Dump</em> section:</p>
+
+<p><img src="/assets/images/4/4/flare5.png" alt="Searching for player position" /></p>
+
+<p>These values represent the <strong>DWORD</strong> representation of the
+float values. We can view the floating point value by right-clicking on
+the value and choosing <em>Float</em> -&gt; <em>Float (32-bit)</em>:</p>
+
+<p><img src="/assets/images/4/4/flare6.png" alt="Searching for player position" /></p>
+
+<p>Doing so will reveal the values we have seen before in Cheat Engine:</p>
+
+<p><img src="/assets/images/4/4/flare7.png" alt="Searching for player position" /></p>
+
+<p>From this, we can assume that at this point in execution,
+<strong>ebp</strong> and <strong>ebx</strong> hold the X and Y position of
+the player.</p>
+
+<h1 id="flare-coordinates">Flare Coordinates</h1>
+
+<p>If you move directly up and down in Flare, you will notice that both the X
+and Y position values change. Likewise, if you move left and right, both
+of the values change as well. We would expect only one of the values to
+change in both of these cases. As such, we need to briefly examine the
+coordinate system in the game.</p>
+
+<p>Flare, like many ARPGs, is rendered in an isometric perspective. For our
+purposes, this effectively means that the X and Y axes are rotated 45
+degrees, like so:</p>
+
+<p><img src="/assets/images/4/4/flare8.png" alt="Searching for player position" /></p>
+
+<p>If you move your character along these axes, you will notice only one
+value changes.</p>
+
+<h1 id="locating-enemy-position">Locating Enemy Position</h1>
+
+<p>The code we identified in the previous section appeared lower-level, due
+to the amount of floating point operations and the lack of branching or
+<strong>call</strong> instructions. If we consider the function chain in
+Flare, it may look like:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">game_loop</span><span class="p">()</span>
+  <span class="n">handle_input</span><span class="p">()</span>
+    <span class="n">update_character</span><span class="p">()</span>
+      <span class="n">update_position</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>Our identified code is most likely located in the
+<strong>update_position()</strong> method. Often games will reuse
+lower-level code like <strong>update_position()</strong> for multiple
+entities. For example, the function chain for updating enemies make look
+like:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">game_loop</span><span class="p">()</span>
+  <span class="n">handle_input</span><span class="p">()</span>
+    <span class="n">update_enemies</span><span class="p">()</span>
+      <span class="n">update_position</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>If Flare is using this model, we can use the code we located when
+searching for our player to also locate our enemies. This will not be the
+case with every game, but it is worth trying to make reversing easier.</p>
+
+<p>First, set a breakpoint again on the <strong>fstp</strong> instruction we
+identified previously. In Flare, move your character around the screen to
+make the breakpoint pop. When it does, execute until return and step over
+to go up a single level of code:</p>
+
+<p><img src="/assets/images/4/4/flare9.png" alt="Searching for player position" /></p>
+
+<p>If we look above the call, we see the following code:</p>
+
+<p><img src="/assets/images/4/4/flare10.png" alt="Searching for player position" /></p>
+
+<p>Examining the highlighted code, we see that <strong>eax</strong> and
+<strong>ebx</strong> are set to values within 4 bytes of each other. This
+matches the distance we observed between the X and Y positions. If we set
+a breakpoint on the <strong>add ebx, 240</strong> instruction and view
+<strong>ebx</strong> in the dump, we can confirm that
+<strong>eax</strong> and <strong>ebx</strong> contain our player’s X and Y
+position.</p>
+
+<p>Next, disable the breakpoint and go back into Flare. In game, move to the
+next screen, which has several enemies. Once there, stop moving your
+player and re-enable the breakpoint on the
+<strong>add ebx, 240</strong> instruction. After a bit, the breakpoint
+should pop again. If you examine <strong>eax</strong> and
+<strong>ebx</strong> in the dump, you should see that they are at a
+different address from our player’s X and Y position, but contain similar
+values:</p>
+
+<p><img src="/assets/images/4/4/flare11.png" alt="Searching for player position" /></p>
+
+<p>The fact that this code is called for both players and enemies indicates
+that the game shares this code and calls it from different locations. We
+can observe this behavior by first disabling the breakpoint and moving our
+character back to the first screen with no enemies. Then, re-enable the
+breakpoint and move your character to cause it to pop. Once it does, use
+execute until return and step over to navigate up a level to the calling
+code for the player:</p>
+
+<p><img src="/assets/images/4/4/flare12.png" alt="Searching for player position" /></p>
+
+<p>Then, disable the breakpoint and move your character back to the screen
+with the enemies. Do the same process as above to make the breakpoint pop
+again and then navigate up a level. You will notice that this location is
+different from the player’s position:</p>
+
+<p><img src="/assets/images/4/4/flare13.png" alt="Searching for player position" /></p>
+
+<p>We will use these differences when programming our hack to determine enemy
+positions.</p>
+
+<h1 id="locating-mouse-position">Locating Mouse Position</h1>
+
+<p>With our player and enemy positions now located, we need to locate our
+mouse position in memory. This will allow us to set the mouse position
+toward the enemy when we write our hack.</p>
+
+<p>Windows has several API’s to manipulate the mouse position inside a
+window, like <a href="https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-setcursorpos">SetCursorPos.</a>
+This API takes two <strong>int</strong>s as X and Y parameters. As a
+result, we know we can scan for a <em>Value Type</em> set to <em>4 Bytes</em>.</p>
+
+<p>Start with a scan for an <em>Unknown value</em> type. Then, move your cursor
+to the right and search for <em>Increased value</em>. When you get to the
+edge of the window, move your cursor to the left and search for
+<em>Decreased value</em>. Eventually, you should narrow down your results to
+a few addresses:</p>
+
+<p><img src="/assets/images/4/4/flare14.png" alt="Searching for player position" /></p>
+
+<p>You can determine the exact address by changing each entry and observing
+when the cursor moves. Then, like we have done in previous lessons, set a
+breakpoint on write on this address and move your mouse in Flare. The
+breakpoint should pop immediately at the following location:</p>
+
+<p><img src="/assets/images/4/4/flare15.png" alt="Searching for player position" /></p>
+
+<p>If you look at <strong>ebp+0x644</strong> in the dump, we can see that the
+X and Y coordinates of the mouse are stored right next to each other.</p>
+
+<h1 id="hooking-and-dynamic-code">Hooking and Dynamic Code</h1>
+
+<p>With these locations identified, we can begin to program our hack. For
+this hack, we will use 3 code caves:</p>
+
+<ol>
+  <li>A code cave to retrieve the mouse’s X and Y coordinates.</li>
+  <li>A code cave to retrieve the player’s X and Y coordinates.</li>
+  <li>A code cave in the <strong>update_position</strong> method to retrieve enemy X and Y coordinates.</li>
+</ol>
+
+<p>We will then create a thread that will check to see if the current entity
+in the <strong>update_position</strong> method is a player or an enemy. If
+it is an enemy, the thread will set our mouse X and Y coordinates to the
+direction of the enemy.</p>
+
+<p>Like we initially saw in the <a href="/pages/4/03/">Macro Bot</a> lesson,
+Flare also loads its code dynamically. As a result, we will need to offset
+the addresses we identified above from the base address of the module. For
+the addresses in this lesson, the base address of the Flare.exe module was
+<code class="language-plaintext highlighter-rouge">0x00830000</code>. For our code caves, we will redirect the
+following 3 instructions:</p>
+
+<ol>
+  <li>Mouse - <code class="language-plaintext highlighter-rouge">0x91CBC8</code> <strong>call 0x884210</strong></li>
+  <li>Player - <code class="language-plaintext highlighter-rouge">0x83CAC4</code> <strong>call 0x850840</strong></li>
+  <li>Loop - <code class="language-plaintext highlighter-rouge">0x89BA94</code> <strong>call 0x89B180</strong></li>
+</ol>
+
+<p>All of these instructions are close to instructions we identified when
+reversing in the previous section of this lesson.</p>
+
+<p>First, we will begin the DLL structure we have seen in previous lessons:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;Windows.h&gt;</span><span class="cp">
+</span>
+<span class="n">BOOL</span> <span class="n">WINAPI</span> <span class="nf">DllMain</span><span class="p">(</span><span class="n">HINSTANCE</span> <span class="n">hinstDLL</span><span class="p">,</span> <span class="n">DWORD</span> <span class="n">fdwReason</span><span class="p">,</span> <span class="n">LPVOID</span> <span class="n">lpvReserved</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">DWORD</span> <span class="n">old_protect</span><span class="p">;</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="n">fdwReason</span> <span class="o">==</span> <span class="n">DLL_PROCESS_ATTACH</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//hooking code </span>
+  <span class="p">}</span>
+
+  <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Then, identically to how we have created hooks in previous lessons, we will
+hook the 3 instructions identified above:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">HANDLE</span> <span class="n">flare_base</span><span class="p">;</span>
+
+<span class="n">DWORD</span> <span class="n">mouse_call_address</span><span class="p">;</span>
+<span class="n">DWORD</span> <span class="n">mouse_return_address</span><span class="p">;</span>
+
+<span class="n">DWORD</span> <span class="n">player_call_address</span><span class="p">;</span>
+<span class="n">DWORD</span> <span class="n">player_return_address</span><span class="p">;</span>
+
+<span class="n">DWORD</span> <span class="n">loop_call_address</span><span class="p">;</span>
+<span class="n">DWORD</span> <span class="n">loop_return_address</span><span class="p">;</span>
+
+<span class="p">...</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">fdwReason</span> <span class="o">==</span> <span class="n">DLL_PROCESS_ATTACH</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">//hooking code      </span>
+  <span class="n">flare_base</span> <span class="o">=</span> <span class="n">GetModuleHandle</span><span class="p">(</span><span class="s">L"flare.exe"</span><span class="p">);</span>
+
+  <span class="c1">// mouse hook</span>
+  <span class="n">mouse_call_address</span> <span class="o">=</span> <span class="p">(</span><span class="n">DWORD</span><span class="p">)</span><span class="n">flare_base</span> <span class="o">+</span> <span class="mh">0x54210</span><span class="p">;</span>
+
+  <span class="kt">unsigned</span> <span class="kt">char</span><span class="o">*</span> <span class="n">hook_location</span> <span class="o">=</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="o">*</span><span class="p">)((</span><span class="n">DWORD</span><span class="p">)</span><span class="n">flare_base</span> <span class="o">+</span> <span class="mh">0xECBC8</span><span class="p">);</span>
+  <span class="n">mouse_return_address</span> <span class="o">=</span> <span class="p">(</span><span class="n">DWORD</span><span class="p">)</span><span class="n">hook_location</span> <span class="o">+</span> <span class="mi">5</span><span class="p">;</span>
+
+  <span class="n">VirtualProtect</span><span class="p">((</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span><span class="n">hook_location</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">PAGE_EXECUTE_READWRITE</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">old_protect</span><span class="p">);</span>
+  <span class="o">*</span><span class="n">hook_location</span> <span class="o">=</span> <span class="mh">0xE9</span><span class="p">;</span>
+  <span class="o">*</span><span class="p">(</span><span class="n">DWORD</span><span class="o">*</span><span class="p">)(</span><span class="n">hook_location</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">DWORD</span><span class="p">)</span><span class="o">&amp;</span><span class="n">mouse_codecave</span> <span class="o">-</span> <span class="p">((</span><span class="n">DWORD</span><span class="p">)</span><span class="n">hook_location</span> <span class="o">+</span> <span class="mi">5</span><span class="p">);</span>
+
+  <span class="c1">// player hook</span>
+  <span class="n">player_call_address</span> <span class="o">=</span> <span class="p">(</span><span class="n">DWORD</span><span class="p">)</span><span class="n">flare_base</span> <span class="o">+</span> <span class="mh">0x20840</span><span class="p">;</span>
+
+  <span class="n">hook_location</span> <span class="o">=</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="o">*</span><span class="p">)((</span><span class="n">DWORD</span><span class="p">)</span><span class="n">flare_base</span> <span class="o">+</span> <span class="mh">0xCAC4</span><span class="p">);</span>
+  <span class="n">player_return_address</span> <span class="o">=</span> <span class="p">(</span><span class="n">DWORD</span><span class="p">)</span><span class="n">hook_location</span> <span class="o">+</span> <span class="mi">5</span><span class="p">;</span>
+
+  <span class="n">VirtualProtect</span><span class="p">((</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span><span class="n">hook_location</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">PAGE_EXECUTE_READWRITE</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">old_protect</span><span class="p">);</span>
+  <span class="o">*</span><span class="n">hook_location</span> <span class="o">=</span> <span class="mh">0xE9</span><span class="p">;</span>
+  <span class="o">*</span><span class="p">(</span><span class="n">DWORD</span><span class="o">*</span><span class="p">)(</span><span class="n">hook_location</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">DWORD</span><span class="p">)</span><span class="o">&amp;</span><span class="n">player_codecave</span> <span class="o">-</span> <span class="p">((</span><span class="n">DWORD</span><span class="p">)</span><span class="n">hook_location</span> <span class="o">+</span> <span class="mi">5</span><span class="p">);</span>
+
+  <span class="c1">// game loop hook</span>
+  <span class="n">loop_call_address</span> <span class="o">=</span> <span class="p">(</span><span class="n">DWORD</span><span class="p">)</span><span class="n">flare_base</span> <span class="o">+</span> <span class="mh">0x6B180</span><span class="p">;</span>
+
+  <span class="n">hook_location</span> <span class="o">=</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="o">*</span><span class="p">)((</span><span class="n">DWORD</span><span class="p">)</span><span class="n">flare_base</span> <span class="o">+</span> <span class="mh">0x6BA94</span><span class="p">);</span>
+  <span class="n">loop_return_address</span> <span class="o">=</span> <span class="p">(</span><span class="n">DWORD</span><span class="p">)</span><span class="n">hook_location</span> <span class="o">+</span> <span class="mi">5</span><span class="p">;</span>
+
+  <span class="n">VirtualProtect</span><span class="p">((</span><span class="kt">void</span><span class="o">*</span><span class="p">)</span><span class="n">hook_location</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">PAGE_EXECUTE_READWRITE</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">old_protect</span><span class="p">);</span>
+  <span class="o">*</span><span class="n">hook_location</span> <span class="o">=</span> <span class="mh">0xE9</span><span class="p">;</span>
+  <span class="o">*</span><span class="p">(</span><span class="n">DWORD</span><span class="o">*</span><span class="p">)(</span><span class="n">hook_location</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">DWORD</span><span class="p">)</span><span class="o">&amp;</span><span class="n">loop_codecave</span> <span class="o">-</span> <span class="p">((</span><span class="n">DWORD</span><span class="p">)</span><span class="n">hook_location</span> <span class="o">+</span> <span class="mi">5</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>To wrap up our <strong>DllMain</strong> function, we also want to create
+our thread:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">CreateThread</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="n">LPTHREAD_START_ROUTINE</span><span class="p">)</span><span class="n">injected_thread</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h1 id="mouse-code-cave">Mouse Code Cave</h1>
+
+<p>When our mouse code cave executes, <strong>ebp+0x664</strong> holds the
+cursor’s X position and <strong>ebp+0x668</strong> holds the cursor’s Y
+position. Our code cave will retrieve these values and assign two pointers
+to their location, <strong>mouse_x</strong> and <strong>mouse_y</strong>:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">DWORD</span><span class="o">*</span> <span class="n">mouse_x</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+<span class="n">DWORD</span><span class="o">*</span> <span class="n">mouse_y</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+
+<span class="kr">__declspec</span><span class="p">(</span><span class="kr">naked</span><span class="p">)</span> <span class="kt">void</span> <span class="nf">mouse_codecave</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kr">__asm</span> <span class="p">{</span>
+    <span class="n">call</span> <span class="n">mouse_call_address</span>
+    <span class="n">pushad</span>
+    <span class="n">mov</span> <span class="n">eax</span><span class="p">,</span> <span class="n">ebp</span>
+    <span class="n">add</span> <span class="n">eax</span><span class="p">,</span> <span class="mh">0x664</span>
+    <span class="n">mov</span> <span class="n">ebx</span><span class="p">,</span> <span class="n">ebp</span>
+    <span class="n">add</span> <span class="n">ebx</span><span class="p">,</span> <span class="mh">0x668</span>
+    <span class="n">mov</span> <span class="n">mouse_x</span><span class="p">,</span> <span class="n">eax</span>
+    <span class="n">mov</span> <span class="n">mouse_y</span><span class="p">,</span> <span class="n">ebx</span>
+    <span class="n">popad</span>
+    <span class="n">jmp</span> <span class="n">mouse_return_address</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h1 id="player-code-cave">Player Code Cave</h1>
+
+<p>In a similar manner to our mouse code cave, when our player code cave
+executes, <strong>ecx+0x240</strong> holds the player’s X position and
+<strong>ecx+0x244</strong> holds the player’s Y position. Our code cave
+will retrieve these values and assign two pointers to their location:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">float</span><span class="o">*</span> <span class="n">player_x</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+<span class="kt">float</span><span class="o">*</span> <span class="n">player_y</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+
+<span class="kr">__declspec</span><span class="p">(</span><span class="kr">naked</span><span class="p">)</span> <span class="kt">void</span> <span class="nf">player_codecave</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kr">__asm</span> <span class="p">{</span>
+    <span class="n">pushad</span>
+    <span class="n">mov</span> <span class="n">eax</span><span class="p">,</span> <span class="n">ecx</span> 
+    <span class="n">add</span> <span class="n">eax</span><span class="p">,</span> <span class="mh">0x240</span>
+    <span class="n">mov</span> <span class="n">player_x</span><span class="p">,</span> <span class="n">eax</span> 
+    <span class="n">add</span> <span class="n">eax</span><span class="p">,</span> <span class="mi">4</span>
+    <span class="n">mov</span> <span class="n">player_y</span><span class="p">,</span> <span class="n">eax</span>
+    <span class="n">popad</span>
+    <span class="n">call</span> <span class="n">player_call_address</span>
+    <span class="n">jmp</span> <span class="n">player_return_address</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h1 id="loop-code-cave">Loop Code Cave</h1>
+
+<p>Our loop code cave will hook the location that is shared between the
+player and enemy methods for updating a position. When this code cave
+executes, <strong>ebx</strong> will store the Y position of the player or
+enemy and <strong>ebx - 4</strong> will store the X position. Like the
+previous two code caves, we will assign pointers to these addresses:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">float</span><span class="o">*</span> <span class="n">enemy_x</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+<span class="kt">float</span><span class="o">*</span> <span class="n">enemy_y</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+
+<span class="kr">__declspec</span><span class="p">(</span><span class="kr">naked</span><span class="p">)</span> <span class="kt">void</span> <span class="nf">loop_codecave</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kr">__asm</span> <span class="p">{</span>
+    <span class="n">pushad</span>
+    <span class="n">mov</span> <span class="n">eax</span><span class="p">,</span> <span class="n">ebx</span>
+    <span class="n">sub</span> <span class="n">eax</span><span class="p">,</span> <span class="mi">4</span>
+    <span class="n">mov</span> <span class="n">enemy_x</span><span class="p">,</span> <span class="n">eax</span>
+    <span class="n">mov</span> <span class="n">enemy_y</span><span class="p">,</span> <span class="n">ebx</span>
+    <span class="n">popad</span>
+    <span class="n">call</span> <span class="n">loop_call_address</span>
+    <span class="n">jmp</span> <span class="n">loop_return_address</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h1 id="bot-thread">Bot Thread</h1>
+
+<p>With all of our pointers assigned, we can finally create the main logic of
+the bot. This thread will constantly check to see if all the pointers are
+assigned. If they are, the thread will then check to make sure that the
+character being updated is not the player. As a last check, we make sure
+that the “M” key is being held down so that our bot can be toggled:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">injected_thread</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">player_x</span> <span class="o">!=</span> <span class="nb">NULL</span> <span class="o">&amp;&amp;</span> <span class="n">player_y</span> <span class="o">!=</span> <span class="nb">NULL</span> <span class="o">&amp;&amp;</span> <span class="n">enemy_x</span> <span class="o">!=</span> <span class="nb">NULL</span> <span class="o">&amp;&amp;</span> <span class="n">enemy_y</span> <span class="o">!=</span> <span class="nb">NULL</span> 
+    <span class="o">&amp;&amp;</span> <span class="n">player_x</span> <span class="o">!=</span> <span class="n">enemy_x</span> <span class="o">&amp;&amp;</span> <span class="n">player_y</span> <span class="o">!=</span> <span class="n">enemy_y</span>
+    <span class="o">&amp;&amp;</span> <span class="n">mouse_x</span> <span class="o">!=</span> <span class="nb">NULL</span> <span class="o">&amp;&amp;</span> <span class="n">mouse_y</span> <span class="o">!=</span> <span class="nb">NULL</span> <span class="o">&amp;&amp;</span> <span class="n">GetAsyncKeyState</span><span class="p">(</span><span class="sc">'M'</span><span class="p">))</span> <span class="p">{</span>
+      <span class="c1">// move player</span>
+    <span class="p">}</span>
+
+    <span class="n">Sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>If all these conditions are met, we know that an enemy is moving on the
+same screen as our player and we want to start moving our player toward
+the enemy. In this lesson, our bot will try to take a direct path to the
+enemy, as this is the easiest logic to implement. For a more complete
+farming bot, we would need to make sure to guide our player character
+around obstacles.</p>
+
+<p>Movement in Flare, like most ARPGs, is done by clicking in the direction
+you want to move. Our bot will move in four directions, based on the axes
+we discussed earlier:</p>
+
+<p><img src="/assets/images/4/4/flare16.png" alt="Searching for player position" /></p>
+
+<p>Since we are taking a direct path, we can set the mouse cursor based on
+the enemy’s position relative to our player. For example, if the enemy is
+to the left of us, we will set our mouse cursor to the left of our player.
+The mouse position values can be retrieved by hovering the mouse over the
+highlighted positions above and viewing the value at the mouse address in
+the dump of x64dbg:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="n">enemy_x</span> <span class="o">&lt;</span> <span class="o">*</span><span class="n">player_x</span><span class="p">)</span> <span class="p">{</span>
+  <span class="o">*</span><span class="n">mouse_x</span> <span class="o">=</span> <span class="mi">490</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="p">{</span>
+  <span class="o">*</span><span class="n">mouse_x</span> <span class="o">=</span> <span class="mi">560</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="n">enemy_y</span> <span class="o">&gt;</span> <span class="o">*</span><span class="n">player_y</span><span class="p">)</span> <span class="p">{</span>
+  <span class="o">*</span><span class="n">mouse_y</span> <span class="o">=</span> <span class="mi">270</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="p">{</span>
+  <span class="o">*</span><span class="n">mouse_y</span> <span class="o">=</span> <span class="mi">330</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Finally, we will use the <a href="https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-sendinput">SendInput</a> API to send a left mouse down event to the game. SendInput takes an array
+of input events, which allows you to send multiple events. This can be
+useful if we want to do multiple actions at once, such as attacking and
+then casting a spell. In this lesson, we will only send one input, which is
+the mouse down or mouse up event:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">input</span><span class="p">.</span><span class="n">type</span> <span class="o">=</span> <span class="n">INPUT_MOUSE</span><span class="p">;</span>
+<span class="n">input</span><span class="p">.</span><span class="n">mi</span><span class="p">.</span><span class="n">dwFlags</span> <span class="o">=</span> <span class="n">MOUSEEVENTF_LEFTDOWN</span><span class="p">;</span>
+<span class="n">SendInput</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">input</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">INPUT</span><span class="p">));</span>
+</code></pre></div></div>
+
+<p>We can now build this DLL and inject it into our game. In game, move to a
+screen with an enemy and hold down the “M” key. Your character should run
+toward the enemy and attack when close enough.</p>
+
+<p>The full source code for this lesson is available on <a href="https://github.com/GameHackingAcademy/Flare_FarmingBot">github.</a></p>
+
+<p> </p>
+
+
+                </section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+          <a
+            href="/pages/4/03/"
+            class="navigation navigation-prev navigation-unique"
+            aria-label="Previous page: Macro Bot"
+          >
+            <i class="fa fa-angle-left"></i>
+          </a>
+           
+          <a
+            href="/pages/5/01/"
+            class="navigation navigation-next navigation-unique"
+            aria-label="Next page: 3D Fundamentals"
+          >
+            <i class="fa fa-angle-right"></i>
+          </a>
+          
+        </div>
+      </div>
+
+      <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "3D Fundamentals",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_pages/5/01.md",
+            "ref": "_pages/5/01.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {
+                "facebook": false,
+
+                "google": false,
+
+                "github": true,
+                "github_link": "https://github.com/GameHackingAcademy",
+
+                "telegram": false,
+                "telegram_link": "https://t.me",
+
+                "instapaper": false,
+
+                "twitter": true,
+                "twitter_link": "https://twitter.com/GameHackingAcad",
+
+                "vk": false,
+
+                "weibo": false
+            },
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            }
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Game Hacking Academy",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_pages/4/04.md",
+        "mtime": "2023-12-25 00:00:00 -0600",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2023-12-26 18:36:09 -0600"
+    },
+    "basePath": "",
+    "book": {
+        "language": ""
+    }
+});
+        });
+      </script>
+    </div><script src="/assets/gitbook/gitbook.js"></script>
+<script src="/assets/gitbook/theme.js"></script>
+
+<script src="/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+
+<!-- <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script> -->
+
+<script src="/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+
+<!-- trackers --><!-- google analytics --><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160704775-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-160704775-1');
+</script>
+<script>
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 20,
+            density: {
+              enable: true,
+              value_area: 100,
+            },
+          },
+          color: {
+            value: "#6195b9",
+          },
+          shape: {
+            type: "edge",
+          },
+          opacity: {
+            value: 0.3,
+            anim: {
+              enable: true,
+              speed: 0.1,
+              opacity_min: 0,
+              sync: false,
+            },
+          },
+          size: {
+            value: 15,
+            random: true,
+          },
+          line_linked: {
+            enable: false,
+          },
+          move: {
+            enable: true,
+            speed: 0.5,
+            direction: "top",
+            random: true,
+            straight: true,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+            },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: false,
+            },
+            onclick: {
+              enable: false,
+            },
+            resize: true,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

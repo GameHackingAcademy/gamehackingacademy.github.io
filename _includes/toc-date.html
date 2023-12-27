@@ -1,0 +1,101 @@
+<div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;  // propagate
+        }
+        // Fixes the anchor links scroll problem on mobile browsers
+        function mobilePageScrollToAnchor(element) {
+            $(element).closest('li.chapter').find('ul>li').removeClass('active');
+            $(element).parent().addClass('active');
+            if ($(document).width() <= 1240) {
+                $('div.body-inner').animate({scrollTop: $($(element).attr('href')).get(0).offsetTop});
+            }
+            return true;
+        }
+    </script>
+
+    <nav role="navigation">
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="{{site.baseurl}}/assets/search.html">Click to Search</a>
+        </div>
+        <ul class="summary">
+            {% for collection in site.collections %}
+                <!-- <p>{{ collection.label }}</p> -->
+                {% if collection.output %}
+                    {% if collection.label == "posts" %}
+                        {% assign reversed_posts = site[collection.label] | reverse %}
+                    {% else %}
+                        {% assign reversed_posts = site[collection.label] %}
+                    {% endif %}
+
+                    {% for post in reversed_posts %}
+                        {% if page.url == post.url %}
+                        <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
+                        {% else %}
+                        <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
+                        {% endif %}
+                            <a href="{{site.baseurl}}{{post.url}}" onclick="pageScrollToTop(this)">
+                                {{ post.title | escape }}
+                            </a>
+                            {% if site.toc.enabled %}
+                                {% if page.url == post.url %}
+                                    {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
+                                {% endif %}
+                            {% endif %}
+                        </li>
+                        
+                        {% if forloop.index == 1 %}
+                            <li class="divider-header">
+                                <a>Basics</a>
+                            </li>
+                        {% endif %}
+                        {% if forloop.index == 6 %}
+                            <li class="divider-header">
+                                <a>Debugging & Reversing</a>
+                            </li>
+                        {% endif %}
+                        {% if forloop.index == 15 %}
+                            <li class="divider-header">
+                                <a>Programming</a>
+                            </li>
+                        {% endif %}
+                        {% if forloop.index == 20 %}
+                            <li class="divider-header">
+                                <a>RTS/RPG Hacks</a>
+                            </li>
+                        {% endif %}
+                        {% if forloop.index == 24 %}
+                            <li class="divider-header">
+                                <a>FPS Hacks</a>
+                            </li>
+                        {% endif %}
+                        {% if forloop.index == 34 %}
+                            <li class="divider-header">
+                                <a>Multiplayer</a>
+                            </li>
+                        {% endif %}
+                        {% if forloop.index == 39 %}
+                            <li class="divider-header">
+                                <a>Tool Development</a>
+                            </li>
+                        {% endif %}
+                        {% if forloop.index == 45 %}
+                            <li class="divider-header">
+                                <a>Game Resources</a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
+        </ul>
+
+        &nbsp;
+    </nav>
+</div>
