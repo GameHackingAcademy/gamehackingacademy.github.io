@@ -16,12 +16,6 @@ The lessons presented here contain a combination of general information on topic
       
 A PDF of all the content on the site is available <a href="assets/GameHackingAcademy.pdf" target="_blank">here.</a> This PDF is not updated with each change to the site and may differ slightly from the site.
 
-# Donation
-
-Donations are never required but help support the continued development of the site.
-
-<a href="https://www.buymeacoffee.com/gamehackingacad" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-
 # GitHub
 
 All the code used on the site is available on GitHub. 
